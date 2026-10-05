@@ -1,0 +1,90 @@
+{
+  "schema": 5,
+  "dex": 102,
+  "slug": "exeggcute",
+  "name": "Exeggcute",
+  "rig": "pm0102_00_Rig",
+  "shape": "heads",
+  "archetype": "group",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["WaistA1", "WaistA2"],
+      ["WaistB1", "WaistB2"],
+      ["WaistC1", "WaistC2"],
+      ["WaistD1", "WaistD2"],
+      ["WaistE1", "WaistE2"],
+      ["WaistF1", "WaistF2"],
+      ["Feeler"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.3864,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "members": [
+      ["WaistA1", "WaistA2"],
+      ["WaistB1", "WaistB2"],
+      ["WaistC1", "WaistC2"],
+      ["WaistD1", "WaistD2"],
+      ["WaistE1", "WaistE2"],
+      ["WaistF1", "WaistF2"]
+    ],
+    "medium": "land",
+    "swim": "drift",
+    "paddles": false,
+    "sway": [
+      ["WaistA1", "WaistA2"],
+      ["WaistB1", "WaistB2"],
+      ["WaistC1", "WaistC2"],
+      ["WaistD1", "WaistD2"],
+      ["WaistE1", "WaistE2"],
+      ["WaistF1", "WaistF2"],
+      ["Feeler"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

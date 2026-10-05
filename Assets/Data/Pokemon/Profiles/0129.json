@@ -1,0 +1,84 @@
+{
+  "schema": 5,
+  "dex": 129,
+  "slug": "magikarp",
+  "name": "Magikarp",
+  "rig": "pm0129_00_Rig",
+  "shape": "fish",
+  "archetype": "aquatic",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerBeak",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["LArm", "LForeArm"],
+      ["LFeeler1", "LFeeler2", "LFeeler3", "LFeeler4", "LFeeler5"],
+      ["RArm", "RForeArm"],
+      ["RFeeler1", "RFeeler2", "RFeeler3", "RFeeler4", "RFeeler5"],
+      ["UpperBeak"],
+      ["FeelerA"],
+      ["FeelerB"]
+    ],
+    "duplicated": ["FeelerA", "FeelerB", "Head", "Hips", "LArm", "LFeeler1", "LFeeler2", "LFeeler3", "LFeeler4", "LFeeler5", "LForeArm", "LowerBeak", "RArm", "RFeeler1", "RFeeler2", "RFeeler3", "RFeeler4", "RFeeler5", "RForeArm", "Tail1", "Tail2", "Tail3", "UpperBeak", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": [],
+    "hit": "damageS01",
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["special", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.9166,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "wave": "lateral",
+    "medium": "water",
+    "swim": "undulate",
+    "paddles": true,
+    "sway": [
+      ["LArm", "LForeArm"],
+      ["LFeeler1", "LFeeler2", "LFeeler3", "LFeeler4", "LFeeler5"],
+      ["RArm", "RForeArm"],
+      ["RFeeler1", "RFeeler2", "RFeeler3", "RFeeler4", "RFeeler5"],
+      ["FeelerA"],
+      ["FeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

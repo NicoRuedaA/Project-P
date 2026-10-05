@@ -1,0 +1,114 @@
+{
+  "schema": 5,
+  "dex": 140,
+  "slug": "kabuto",
+  "name": "Kabuto",
+  "rig": "pm0140_00_Rig",
+  "shape": "armor",
+  "archetype": "arthropod",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1251,
+        "sole": 0.0278
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1251,
+        "sole": 0.0278
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.1337,
+        "sole": 0.0328
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.1337,
+        "sole": 0.0328
+      }
+    ],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFinger"],
+      ["LToe"],
+      ["RFinger"],
+      ["RToe"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": [],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["physical", "walk", "run"],
+  "metrics": {
+    "height": 0.4758,
+    "hipHeight": 0.1322,
+    "legLength": 0.1251,
+    "armLength": 0.1337,
+    "idleLift": -0.0067,
+    "normalized": { "hipHeight": 0.2778, "legLength": 0.263, "armLength": 0.2809, "idleLift": -0.014 },
+    "displayHeight": 2.55,
+    "stride": 2.0583
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 0,
+    "vines": [],
+    "sitUp": false,
+    "multileg": true,
+    "medium": "amphibious",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "medium", "reason": "Kabuto is a shelled arthropod from the sea floor that crawls up onto beaches on the short legs under its shell and swims paddling with them. Its rig (two leg pairs hidden under a round shell) looks to the rules like any land arthropod's, such as Paras's, so its amphibious medium comes from here." }
+  ],
+  "warnings": []
+}

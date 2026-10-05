@@ -1,0 +1,99 @@
+{
+  "schema": 5,
+  "dex": 74,
+  "slug": "geodude",
+  "name": "Geodude",
+  "rig": "pm0074_00_Rig",
+  "shape": "arms",
+  "archetype": "floater",
+  "traits": ["arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.3505,
+        "spread": 0
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.3505,
+        "spread": 0
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2", "LFingerB3"],
+      ["LFingerC1", "LFingerC2", "LFingerC3"],
+      ["LFingerD1", "LFingerD2", "LFingerD3"],
+      ["LFingerE1", "LFingerE2", "LFingerE3"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2", "RFingerB3"],
+      ["RFingerC1", "RFingerC2", "RFingerC3"],
+      ["RFingerD1", "RFingerD2", "RFingerD3"],
+      ["RFingerE1", "RFingerE2", "RFingerE3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.3626,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.3505,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.9666, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "hover": true,
+    "hoverLift": 0.5283,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

@@ -1,0 +1,126 @@
+{
+  "schema": 5,
+  "dex": 2,
+  "slug": "ivysaur",
+  "name": "Ivysaur",
+  "rig": "pm0002_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.2753,
+        "sole": 0.0487
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.2753,
+        "sole": 0.0487
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.2833,
+        "sole": 0.0414
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.2833,
+        "sole": 0.0414
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2", "FeelerB3"],
+      ["FeelerC1", "FeelerC2", "FeelerC3"],
+      ["LFeeler1", "LFeeler2", "LFeeler3"],
+      ["RFeeler1", "RFeeler2", "RFeeler3"],
+      ["LEar"],
+      ["REar"],
+      ["LFinger"],
+      ["RFinger"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_landA01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["ba01_landB01", "ba01_landC01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2696,
+    "hipHeight": 0.3184,
+    "legLength": 0.2753,
+    "armLength": 0.2833,
+    "idleLift": -0.0072,
+    "normalized": { "hipHeight": 0.2508, "legLength": 0.2168, "armLength": 0.2232, "idleLift": -0.0057 },
+    "displayHeight": 2.55,
+    "stride": 1.4499
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2", "FeelerB3"],
+      ["FeelerC1", "FeelerC2", "FeelerC3"],
+      ["LFeeler1", "LFeeler2", "LFeeler3"],
+      ["RFeeler1", "RFeeler2", "RFeeler3"],
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

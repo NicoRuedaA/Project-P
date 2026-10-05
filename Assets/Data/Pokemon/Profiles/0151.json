@@ -1,0 +1,121 @@
+{
+  "schema": 5,
+  "dex": 151,
+  "slug": "mew",
+  "name": "Mew",
+  "rig": "pm0151_00_Rig",
+  "shape": "upright",
+  "archetype": "floater",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1328,
+        "sole": 0.0244
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1328,
+        "sole": 0.0244
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.0618,
+        "spread": 0.6087
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.0618,
+        "spread": 0.6087
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LEar"],
+      ["REar"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_land01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": [],
+    "special": ["ba21_tokusyu01", "ba21_tokusyu02", "ba21_tokusyu03"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["kw35_playA01"]
+  },
+  "missingClips": ["physical", "walk", "run"],
+  "metrics": {
+    "height": 0.4273,
+    "hipHeight": 0.1689,
+    "legLength": 0.1328,
+    "armLength": 0.0618,
+    "idleLift": 0.1731,
+    "normalized": { "hipHeight": 0.3953, "legLength": 0.3108, "armLength": 0.1445, "idleLift": 0.405 },
+    "displayHeight": 2.55,
+    "stride": 1.9019
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": true,
+    "restTails": ["Tail1"],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "hover": true,
+    "hoverLift": 0.1709,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Mew as upright, which maps to a biped, but its official idle (ba10_waitA01) hovers with its feet about 0.4 of its height above their rest height and its lowest skin 0.14 of its height off the ground. It floats rather than walks: a floater hovers like a flyer that never lands, without wings." }
+  ],
+  "warnings": []
+}

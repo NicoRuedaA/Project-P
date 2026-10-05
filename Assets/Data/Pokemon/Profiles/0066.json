@@ -1,0 +1,122 @@
+{
+  "schema": 5,
+  "dex": 66,
+  "slug": "machop",
+  "name": "Machop",
+  "rig": "pm0066_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.2167,
+        "sole": 0.0645
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.2167,
+        "sole": 0.0645
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.2528,
+        "spread": 0.3076
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.2528,
+        "spread": 0.3076
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2"]
+    ],
+    "body": ["Head", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2", "LFingerB3"],
+      ["LFingerC1", "LFingerC2", "LFingerC3"],
+      ["LFingerD1", "LFingerD2", "LFingerD3"],
+      ["LFingerE1", "LFingerE2", "LFingerE3"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2", "RFingerB3"],
+      ["RFingerC1", "RFingerC2", "RFingerC3"],
+      ["RFingerD1", "RFingerD2", "RFingerD3"],
+      ["RFingerE1", "RFingerE2", "RFingerE3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.868,
+    "hipHeight": 0.2763,
+    "legLength": 0.2167,
+    "armLength": 0.2528,
+    "idleLift": -0.0053,
+    "normalized": { "hipHeight": 0.3184, "legLength": 0.2497, "armLength": 0.2913, "idleLift": -0.0062 },
+    "displayHeight": 2.55,
+    "stride": 1.8897
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

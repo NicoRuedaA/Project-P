@@ -1,0 +1,122 @@
+{
+  "schema": 5,
+  "dex": 85,
+  "slug": "dodrio",
+  "name": "Dodrio",
+  "rig": "pm0085_00_Rig",
+  "shape": "legs",
+  "archetype": "biped",
+  "traits": ["legs:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.5978,
+        "sole": 0.0642
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.5978,
+        "sole": 0.0642
+      }
+    ],
+    "arms": [],
+    "spine": [],
+    "neck": ["NeckA1", "NeckA2", "NeckA3"],
+    "head": "HeadA",
+    "jaw": "LowerBeakA",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["HeadA", "NeckA3", "NeckA2", "NeckA1", "Waist", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["LToeA1", "LToeA2"],
+      ["LToeB"],
+      ["LToeC1", "LToeC2"],
+      ["LToeD1", "LToeD2"],
+      ["HairA"],
+      ["LHairA"],
+      ["RHairA"],
+      ["TongueA"],
+      ["UpperBeakA"],
+      ["HairB"],
+      ["LHairB"],
+      ["RHairB"],
+      ["LowerBeakB", "TongueB"],
+      ["UpperBeakB"],
+      ["HairC"],
+      ["LHairC"],
+      ["RHairC"],
+      ["LowerBeakC", "TongueC"],
+      ["UpperBeakC"],
+      ["RToeA1", "RToeA2"],
+      ["RToeB"],
+      ["RToeC1", "RToeC2"],
+      ["RToeD1", "RToeD2"]
+    ],
+    "duplicated": ["HeadB", "HeadC", "NeckA1", "NeckA2", "NeckA3", "NeckB1", "NeckB2", "NeckB3", "NeckC1", "NeckC2", "NeckC3"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.5649,
+    "hipHeight": 0.6617,
+    "legLength": 0.5978,
+    "armLength": null,
+    "idleLift": -0.007,
+    "normalized": { "hipHeight": 0.4229, "legLength": 0.382, "armLength": null, "idleLift": -0.0045 },
+    "displayHeight": 2.55,
+    "stride": 2.549
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["HairA"],
+      ["LHairA"],
+      ["RHairA"],
+      ["HairB"],
+      ["LHairB"],
+      ["RHairB"],
+      ["HairC"],
+      ["LHairC"],
+      ["RHairC"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

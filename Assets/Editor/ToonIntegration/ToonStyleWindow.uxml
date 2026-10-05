@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+  <ui:Style src="ToonStyleWindow.uss" />
+  <ui:ScrollView name="styleRoot" class="toon-style">
+    <ui:Label text="Global Toon Style" class="heading" />
+    <ui:Label text="Apply shared outlines and optional toon shadows. Textures, UVs, base tints and scenes are preserved." class="description" />
+    <ui:VisualElement name="settings">
+      <ui:Label text="Outlines" class="section" />
+      <ui:Toggle name="outline" label="Outline" binding-path="outline" class="field" tooltip="Enable outlines for existing and newly generated Toon materials." />
+      <ui:FloatField name="outlineWidth" label="Width" binding-path="outlineWidth" class="field" tooltip="Outline width from 0 to 10. Retained when outlines are disabled." />
+      <uie:ColorField name="outlineColor" label="Color" binding-path="outlineColor" class="field" tooltip="Shared outline color; does not change the material base color." />
+      <ui:Label text="Toon Shadows" class="section" />
+      <ui:Toggle name="overrideToonShadows" label="Override Toon Shadows" binding-path="overrideToonShadows" class="field" tooltip="Opt in, then Apply. Turning this off and applying restores each material's original shade colors and bands." />
+      <ui:Label text="Brightness multiplies each material's authored shade tint: 0 = black, 1 = original, 2 = twice as bright. This does not edit eye/base artwork." class="description" />
+      <ui:VisualElement name="shadowControls">
+        <ui:Toggle name="overrideShadowReception" label="Override Shadow Reception" binding-path="overrideShadowReception" class="field" tooltip="Apply a shared projected-shadow reception choice. Turning this override off and applying restores each material's original reception." />
+        <ui:Toggle name="receiveProjectedShadows" label="Receive Projected Shadows" binding-path="receiveProjectedShadows" class="field" tooltip="Receive shadows from geometry, including self-shadowing. Turning this off keeps normal-based toon bands and shadow casting, without changing lights or pipeline settings." />
+        <ui:Slider name="firstShadeBrightness" label="First Shade Brightness" binding-path="firstShadeBrightness" low-value="0" high-value="2" show-input-field="true" class="field" />
+        <ui:Slider name="secondShadeBrightness" label="Second Shade Brightness" binding-path="secondShadeBrightness" low-value="0" high-value="2" show-input-field="true" class="field" />
+        <ui:Slider name="firstShadeThreshold" label="First Shade Threshold" binding-path="firstShadeThreshold" low-value="0" high-value="1" show-input-field="true" class="field" tooltip="Higher values expand the first shade band into brighter areas." />
+        <ui:Slider name="secondShadeThreshold" label="Second Shade Threshold" binding-path="secondShadeThreshold" low-value="0" high-value="1" show-input-field="true" class="field" tooltip="Higher values expand the deep shade band. Cannot exceed the first threshold." />
+        <ui:Slider name="firstShadeFeather" label="First Shade Softness" binding-path="firstShadeFeather" low-value="0.0001" high-value="1" show-input-field="true" class="field" tooltip="Small values give a crisp first band; larger values soften the transition." />
+        <ui:Slider name="secondShadeFeather" label="Second Shade Softness" binding-path="secondShadeFeather" low-value="0.0001" high-value="1" show-input-field="true" class="field" tooltip="Softness of the deep shade transition; not light shadow-map softness." />
+      </ui:VisualElement>
+      <ui:Label text="Bands and optional projected-shadow reception are material settings, not shadow distance, resolution or light softness. Lighting and pipeline settings stay unchanged. Non-Toon special effects are excluded." class="description" />
+    </ui:VisualElement>
+    <ui:Button name="apply" text="Apply to All Toon Materials" class="apply" />
+    <ui:Label name="status" class="status" />
+  </ui:ScrollView>
+</ui:UXML>

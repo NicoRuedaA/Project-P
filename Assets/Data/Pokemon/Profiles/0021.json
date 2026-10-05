@@ -1,0 +1,130 @@
+{
+  "schema": 5,
+  "dex": 21,
+  "slug": "spearow",
+  "name": "Spearow",
+  "rig": "pm0021_00_Rig",
+  "shape": "wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "wings:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1142,
+        "sole": 0.0195
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1142,
+        "sole": 0.0195
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "LowerBeak",
+    "tails": [
+      ["Tail"]
+    ],
+    "body": ["Head", "Neck", "Spine", "Waist", "Hips", "Tail"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "arm",
+        "chain": ["trLArm", "trLForeArm", "LHand"],
+        "span": [0.9154, 0.0275, -0.4016],
+        "normal": [0.1067, 0.9578, -0.2667],
+        "area": 0.0053
+      },
+      {
+        "side": "R",
+        "source": "arm",
+        "chain": ["trRArm", "trRForeArm", "RHand"],
+        "span": [-0.9732, 0.0574, -0.2227],
+        "normal": [-0.1249, 0.9612, -0.2459],
+        "area": 0.0051
+      }
+    ],
+    "appendages": [
+      ["LToeB1", "LToeB2"],
+      ["LToeC1", "LToeC2"],
+      ["LToeD1", "LToeD2"],
+      ["RToeB1", "RToeB2"],
+      ["RToeC1", "RToeC2"],
+      ["RToeD1", "RToeD2"],
+      ["HairA"],
+      ["LHairB"],
+      ["LHairC"],
+      ["RHairB"],
+      ["RHairC"],
+      ["trLFeeler1", "LFeeler2"],
+      ["trRFeeler1", "RFeeler2"]
+    ],
+    "duplicated": ["HairA", "Head", "Hips", "LArm", "LFeeler1", "LFeeler2", "LFoot", "LForeArm", "LHairB", "LHairC", "LHand", "LLeg", "LThigh", "LToeB1", "LToeB2", "LToeC1", "LToeC2", "LToeD1", "LToeD2", "LowerBeak", "Neck", "RArm", "RFeeler1", "RFeeler2", "RFoot", "RForeArm", "RHairB", "RHairC", "RHand", "RLeg", "RThigh", "RToeB1", "RToeB2", "RToeC1", "RToeC2", "RToeD1", "RToeD2", "Spine", "Tail", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.2924,
+    "hipHeight": 0.1196,
+    "legLength": 0.1142,
+    "armLength": 0.0077,
+    "idleLift": null,
+    "normalized": { "hipHeight": 0.4089, "legLength": 0.3905, "armLength": 0.0263, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 2.898
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["HairA"],
+      ["LHairB"],
+      ["LHairC"],
+      ["RHairB"],
+      ["RHairC"],
+      ["trLFeeler1", "LFeeler2"],
+      ["trRFeeler1", "RFeeler2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "helper-joint", "message": "chains run through transform helpers trLArm, trLForeArm, trRArm, trRForeArm; name lookups must use them" },
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

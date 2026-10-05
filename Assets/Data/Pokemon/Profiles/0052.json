@@ -1,0 +1,141 @@
+{
+  "schema": 5,
+  "dex": 52,
+  "slug": "meowth",
+  "name": "Meowth",
+  "rig": "pm0052_00_Rig",
+  "shape": "quadruped",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1041,
+        "sole": 0.0362
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1041,
+        "sole": 0.0362
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.2381,
+        "spread": 0.5169
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.2381,
+        "spread": 0.5169
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"]
+    ],
+    "body": ["Head", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LEar"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["REar"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LFingerA1", "LFingerA2", "LFingerA3"],
+      ["LFingerB1", "LFingerB2", "LFingerB3"],
+      ["LFingerC1", "LFingerC2", "LFingerC3"],
+      ["RFingerA1", "RFingerA2", "RFingerA3"],
+      ["RFingerB1", "RFingerB2", "RFingerB3"],
+      ["RFingerC1", "RFingerC2", "RFingerC3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.7062,
+    "hipHeight": 0.1388,
+    "legLength": 0.1041,
+    "armLength": 0.2381,
+    "idleLift": -0.0008,
+    "normalized": { "hipHeight": 0.1966, "legLength": 0.1474, "armLength": 0.3372, "idleLift": -0.0011 },
+    "displayHeight": 2.55,
+    "stride": 0.9607
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["REar"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["FeelerA"],
+      ["FeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Meowth as a quadruped, but its idle (waitA01) stands upright on its hind legs with the spine vertical and the arms hanging at its sides, hands at 0.17 of its height; the bind pose holds the arms out in a T. It walks as a biped." }
+  ],
+  "warnings": []
+}

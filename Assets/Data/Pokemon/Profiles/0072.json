@@ -1,0 +1,72 @@
+{
+  "schema": 5,
+  "dex": 72,
+  "slug": "tentacool",
+  "name": "Tentacool",
+  "rig": "pm0072_00_Rig",
+  "shape": "tentacles",
+  "archetype": "aquatic",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFeeler1", "LFeeler2", "LFeeler3", "LFeeler4", "LFeeler5", "LFeeler6"],
+      ["RFeeler1", "RFeeler2", "RFeeler3", "RFeeler4", "RFeeler5", "RFeeler6"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.9532,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "medium": "water",
+    "swim": "pulse",
+    "paddles": true,
+    "sway": [
+      ["LFeeler1", "LFeeler2", "LFeeler3", "LFeeler4", "LFeeler5", "LFeeler6"],
+      ["RFeeler1", "RFeeler2", "RFeeler3", "RFeeler4", "RFeeler5", "RFeeler6"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

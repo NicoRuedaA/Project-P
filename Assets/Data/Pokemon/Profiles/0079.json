@@ -1,0 +1,117 @@
+{
+  "schema": 5,
+  "dex": 79,
+  "slug": "slowpoke",
+  "name": "Slowpoke",
+  "rig": "pm0079_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "trWaist",
+    "waist": "trWaist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LLeg", "LFoot"],
+        "length": 0.3106,
+        "sole": 0.0194
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RLeg", "RFoot"],
+        "length": 0.3106,
+        "sole": 0.0194
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.2942,
+        "sole": 0.0282
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.2942,
+        "sole": 0.0282
+      }
+    ],
+    "arms": [],
+    "spine": ["trSpine1", "trSpine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8"]
+    ],
+    "body": ["Head", "trSpine2", "trSpine1", "trWaist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8"],
+    "wings": [],
+    "appendages": [
+      ["LEar"],
+      ["REar"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 1.2238,
+    "hipHeight": 0.3222,
+    "legLength": 0.3106,
+    "armLength": 0.2942,
+    "idleLift": null,
+    "normalized": { "hipHeight": 0.2633, "legLength": 0.2538, "armLength": 0.2404, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 1.5724
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "helper-joint", "message": "chains run through transform helpers trSpine1, trSpine2; name lookups must use them" },
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

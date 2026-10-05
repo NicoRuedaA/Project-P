@@ -1,0 +1,118 @@
+{
+  "schema": 5,
+  "dex": 32,
+  "slug": "nidoran-m",
+  "name": "Nidoran♂",
+  "rig": "pm0032_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LLeg", "LFoot"],
+        "length": 0.1634,
+        "sole": 0.032
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RLeg", "RFoot"],
+        "length": 0.1634,
+        "sole": 0.032
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1706,
+        "sole": 0.0157
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1706,
+        "sole": 0.0157
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LEar1", "LEar2"],
+      ["Nose"],
+      ["REar1", "REar2"],
+      ["LFinger"],
+      ["RFinger"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.5746,
+    "hipHeight": 0.1872,
+    "legLength": 0.1634,
+    "armLength": 0.1706,
+    "idleLift": -0.007,
+    "normalized": { "hipHeight": 0.3258, "legLength": 0.2844, "armLength": 0.2969, "idleLift": -0.0121 },
+    "displayHeight": 2.55,
+    "stride": 2.0528
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar1", "LEar2"],
+      ["Nose"],
+      ["REar1", "REar2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

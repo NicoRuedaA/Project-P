@@ -1,0 +1,122 @@
+{
+  "schema": 5,
+  "dex": 1,
+  "slug": "bulbasaur",
+  "name": "Bulbasaur",
+  "rig": "pm0001_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LLeg", "LFoot"],
+        "length": 0.1463,
+        "sole": 0.027
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RLeg", "RFoot"],
+        "length": 0.1463,
+        "sole": 0.027
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1675,
+        "sole": 0.0267
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1675,
+        "sole": 0.0267
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["Feeler"],
+      ["LFeelerC01", "LFeelerC02", "LFeelerC03", "LFeelerC04", "LFeelerC05", "LFeelerC06", "LFeelerC07", "LFeelerC08", "LFeelerC09", "LFeelerC10"],
+      ["RFeelerC01", "RFeelerC02", "RFeelerC03", "RFeelerC04", "RFeelerC05", "RFeelerC06", "RFeelerC07", "RFeelerC08", "RFeelerC09", "RFeelerC10"],
+      ["LEar"],
+      ["REar"],
+      ["LFinger"],
+      ["RFinger"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_landA01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["ba01_landB01", "ba01_landC01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.6224,
+    "hipHeight": 0.1726,
+    "legLength": 0.1463,
+    "armLength": 0.1675,
+    "idleLift": -0.0037,
+    "normalized": { "hipHeight": 0.1064, "legLength": 0.0902, "armLength": 0.1033, "idleLift": -0.0023 },
+    "displayHeight": 2.55,
+    "stride": 0.586
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Feeler"],
+      ["LFeelerC01", "LFeelerC02", "LFeelerC03", "LFeelerC04", "LFeelerC05", "LFeelerC06", "LFeelerC07", "LFeelerC08", "LFeelerC09", "LFeelerC10"],
+      ["RFeelerC01", "RFeelerC02", "RFeelerC03", "RFeelerC04", "RFeelerC05", "RFeelerC06", "RFeelerC07", "RFeelerC08", "RFeelerC09", "RFeelerC10"],
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

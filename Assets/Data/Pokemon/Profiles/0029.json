@@ -1,0 +1,126 @@
+{
+  "schema": 5,
+  "dex": 29,
+  "slug": "nidoran-f",
+  "name": "Nidoran♀",
+  "rig": "pm0029_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1676,
+        "sole": 0.0465
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1676,
+        "sole": 0.0465
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1606,
+        "sole": 0.0338
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1606,
+        "sole": 0.0338
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LEar1", "LEar2"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["Nose"],
+      ["REar1", "REar2"],
+      ["RFeelerA"],
+      ["RFeelerB"],
+      ["LFinger"],
+      ["RFinger"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.6126,
+    "hipHeight": 0.2102,
+    "legLength": 0.1676,
+    "armLength": 0.1606,
+    "idleLift": -0.0391,
+    "normalized": { "hipHeight": 0.3431, "legLength": 0.2735, "armLength": 0.2622, "idleLift": -0.0639 },
+    "displayHeight": 2.55,
+    "stride": 1.8642
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar1", "LEar2"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["Nose"],
+      ["REar1", "REar2"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

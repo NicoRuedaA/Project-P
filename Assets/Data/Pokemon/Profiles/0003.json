@@ -1,0 +1,143 @@
+{
+  "schema": 5,
+  "dex": 3,
+  "slug": "venusaur",
+  "name": "Venusaur",
+  "rig": "pm0003_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.6513,
+        "sole": 0.0665
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.6513,
+        "sole": 0.0665
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.4857,
+        "sole": 0.0798
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.4857,
+        "sole": 0.0798
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck1", "Neck2"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Neck2", "Neck1", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["FeelerA1", "FeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["LFeelerD1", "LFeelerD2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["RFeelerD1", "RFeelerD2"],
+      ["FeelerB1", "FeelerB2", "FeelerB3"],
+      ["FeelerC1", "FeelerC2", "FeelerC3"],
+      ["LFeelerA1", "LFeelerA2", "LFeelerA3"],
+      ["RFeelerA1", "RFeelerA2", "RFeelerA3"],
+      ["LFinger1"],
+      ["LJaw"],
+      ["RJaw"],
+      ["LEar"],
+      ["REar"],
+      ["RFinger1"]
+    ],
+    "duplicated": ["FeelerA1", "FeelerA2", "Spine1"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_landA01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01", "ba21_tokusyu02"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["ba01_landB01", "ba01_landC01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.3215,
+    "hipHeight": 0.3123,
+    "legLength": 0.6513,
+    "armLength": 0.4857,
+    "idleLift": -0.0094,
+    "normalized": { "hipHeight": 0.2363, "legLength": 0.4928, "armLength": 0.3676, "idleLift": -0.0071 },
+    "displayHeight": 2.55,
+    "stride": 2.5263
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": ["FeelerB1", "FeelerC1"],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA1", "FeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["LFeelerD1", "LFeelerD2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["RFeelerD1", "RFeelerD2"],
+      ["LFeelerA1", "LFeelerA2", "LFeelerA3"],
+      ["RFeelerA1", "RFeelerA2", "RFeelerA3"],
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [
+    { "mesh": "pm0003_00_CombinedOnExport", "texture": "pm0003_00_Eye1.png" }
+  ],
+  "overrides": [
+    { "field": "vines", "reason": "The two back vines sway while climbing and anchor the visible climbing vines; appendage roles are not detected yet." },
+    { "field": "uvTiles", "reason": "The export merges the eyes into the body material but keeps their UVs one tile above the body atlas, so those faces need the eye texture." }
+  ],
+  "warnings": []
+}

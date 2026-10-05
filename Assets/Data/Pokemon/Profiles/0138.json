@@ -1,0 +1,109 @@
+{
+  "schema": 5,
+  "dex": 138,
+  "slug": "omanyte",
+  "name": "Omanyte",
+  "rig": "pm0138_00_Rig",
+  "shape": "tentacles",
+  "archetype": "aquatic",
+  "traits": ["arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.1234,
+        "spread": 0.6575
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.1234,
+        "spread": 0.6575
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["Hair"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["LFeelerD1", "LFeelerD2"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["RFeelerD1", "RFeelerD2"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.6453,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.1234,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.1912, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "medium": "amphibious",
+    "swim": "pulse",
+    "paddles": true,
+    "sway": [
+      ["Hair"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB1", "LFeelerB2"],
+      ["LFeelerC1", "LFeelerC2"],
+      ["LFeelerD1", "LFeelerD2"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB1", "RFeelerB2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["RFeelerD1", "RFeelerD2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "medium", "reason": "Omanyte is a shelled cephalopod that crawls over the shore on its tentacles. Its eight feelers hang to the floor under the shell, but they are appendages, not limbs, and Tentacool's hanging feelers look the same to the rules, which therefore keep both in the water." }
+  ],
+  "warnings": []
+}

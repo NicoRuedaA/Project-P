@@ -1,0 +1,72 @@
+{
+  "schema": 5,
+  "dex": 137,
+  "slug": "porygon",
+  "name": "Porygon",
+  "rig": "pm0137_00_Rig",
+  "shape": "legs",
+  "archetype": "floater",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail"]
+    ],
+    "body": ["Head", "Waist", "Tail"],
+    "wings": [],
+    "appendages": [
+      ["LFoot"],
+      ["RFoot"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.88,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "hover": true,
+    "hoverLift": 0.2913,
+    "medium": "land",
+    "swim": "drift",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 5,
+  "dex": 93,
+  "slug": "haunter",
+  "name": "Haunter",
+  "rig": "pm0093_00_Rig",
+  "shape": "arms",
+  "archetype": "floater",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"]
+    ],
+    "body": ["Waist", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["Tongue1", "Tongue2", "Tongue3", "Tongue4"],
+      ["LEar"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["LHand"],
+      ["LFingerA1", "LFingerA2", "LFingerA3"],
+      ["LFingerB1", "LFingerB2", "LFingerB3"],
+      ["LFingerC1", "LFingerC2", "LFingerC3"],
+      ["REar"],
+      ["RFeelerA"],
+      ["RFeelerB"],
+      ["RHand"],
+      ["RFingerA1", "RFingerA2", "RFingerA3"],
+      ["RFingerB1", "RFingerB2", "RFingerB3"],
+      ["RFingerC1", "RFingerC2", "RFingerC3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_land01",
+    "idle": "ba10_waitA01",
+    "idleAlt": null,
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2916,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "hover": true,
+    "hoverLift": 0.0299,
+    "medium": "land",
+    "swim": "drift",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["REar"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

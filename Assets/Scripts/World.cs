@@ -4,7 +4,7 @@ namespace Wildbound {
 public static class World {
  public static readonly Vector3 Camp=new Vector3(0,0,-28);
  static Dictionary<Color,Material> materials=new Dictionary<Color,Material>();
- public static GameObject Part(string name,PrimitiveType type,Vector3 position,Vector3 scale,Color color,Transform parent){var o=GameObject.CreatePrimitive(type);o.name=name;if(parent){o.transform.SetParent(parent,false);o.transform.localPosition=position;}else o.transform.position=position;o.transform.localScale=scale;Material m;if(!materials.TryGetValue(color,out m)||!m){var shader=Shader.Find("Wildbound/Toon");m=new Material(shader?shader:Shader.Find("Standard"));m.color=color;materials[color]=m;}o.GetComponent<Renderer>().sharedMaterial=m;return o;}
+ public static GameObject Part(string name,PrimitiveType type,Vector3 position,Vector3 scale,Color color,Transform parent){var o=GameObject.CreatePrimitive(type);o.name=name;if(parent){o.transform.SetParent(parent,false);o.transform.localPosition=position;}else o.transform.position=position;o.transform.localScale=scale;Material m;if(!materials.TryGetValue(color,out m)||!m){m=ToonMaterials.Create(color);materials[color]=m;}ToonStyle.ApplyCurrent(m);o.GetComponent<Renderer>().sharedMaterial=m;return o;}
  static void Scenery(string name,PrimitiveType type,Vector3 pos,Vector3 size,Color color,Transform parent){var o=Part(name,type,pos,size,color,parent);o.layer=8;}
  public static void Build(Game game){Random.InitState(7042);materials.Clear();
  RenderSettings.ambientLight=new Color(.62f,.72f,.77f);RenderSettings.fog=true;RenderSettings.fogColor=new Color(.72f,.84f,.86f);RenderSettings.fogMode=FogMode.ExponentialSquared;RenderSettings.fogDensity=.004f;
@@ -20,10 +20,10 @@ public static class World {
  for(int j=0;j<2;j++)Scenery("Tree canopy",PrimitiveType.Sphere,pos+Vector3.up*(height*.65f+j),new Vector3(3.7f-j*.7f,3-j*.3f,3.7f-j*.7f),new Color(.23f+j*.05f,.46f+j*.08f,.31f),env);
  }
  for(int i=0;i<55;i++){Vector3 pos=new Vector3(Random.Range(-65,65),.3f,Random.Range(-65,65));if(Vector3.Distance(pos,Camp)<9||Mathf.Abs(pos.x)<6)continue;Scenery("Rock",PrimitiveType.Sphere,pos,new Vector3(1.8f,1.2f,1.5f)*Random.Range(.5f,2),new Color(.57f,.61f,.57f),env);}
- for(int i=0;i<200;i++){var pos=new Vector3(Random.Range(-60,60),.13f,Random.Range(-60,60));var grass=Part("Meadow flowers",PrimitiveType.Cube,pos,new Vector3(.13f,.3f,.13f),i%3==0?new Color(1,.84f,.47f):new Color(.69f,.8f,.49f),env);Object.Destroy(grass.GetComponent<Collider>());}
+ for(int i=0;i<200;i++){var pos=new Vector3(Random.Range(-60,60),.13f,Random.Range(-60,60));var grass=Part("Meadow flowers",PrimitiveType.Cube,pos,new Vector3(.13f,.3f,.13f),i%3==0?new Color(1,.84f,.47f):new Color(.69f,.8f,.49f),env);RemoveVisualCollider(grass);}
  Scenery("Camp stone",PrimitiveType.Cylinder,Camp+Vector3.up*.2f,new Vector3(6,.2f,6),new Color(.72f,.68f,.55f),env);
  Scenery("Rest shrine",PrimitiveType.Cube,Camp+new Vector3(0,1.5f,2),new Vector3(1,3,1),new Color(.62f,.68f,.65f),env);
- var gem=Part("Shrine crystal",PrimitiveType.Sphere,Camp+new Vector3(0,3.3f,2),Vector3.one*.65f,new Color(.36f,.89f,.86f),env);Object.Destroy(gem.GetComponent<Collider>());
+ var gem=Part("Shrine crystal",PrimitiveType.Sphere,Camp+new Vector3(0,3.3f,2),Vector3.one*.65f,new Color(.36f,.89f,.86f),env);RemoveVisualCollider(gem);
  var light=gem.AddComponent<Light>();light.color=Color.cyan;light.range=7;light.intensity=1.5f;
  var sign=new GameObject("Camp label");sign.transform.position=Camp+new Vector3(0,4,2);var text=sign.AddComponent<TextMesh>();text.text="CAMPAMENTO\nF · descansar y guardar";text.fontSize=35;text.characterSize=.065f;text.anchor=TextAnchor.MiddleCenter;text.color=new Color(.1f,.24f,.25f);sign.AddComponent<Billboard>();
  var player=new GameObject("Trainer");player.transform.position=Camp+Vector3.back*3+Vector3.up*2;var cc=player.AddComponent<CharacterController>();cc.height=1.8f;cc.radius=.32f;cc.center=Vector3.up*.9f;cc.stepOffset=.35f;game.player=player.AddComponent<PlayerMotor>();
@@ -38,14 +38,14 @@ public static class World {
  for(int i=0;i<points.Length;i++)MakeCreature(game,i%3,points[i],false);
  game.gameObject.AddComponent<WildSpawner>();
  }
- static void VisualPart(string name,PrimitiveType type,Vector3 pos,Vector3 size,Color color,Transform parent){var o=Part(name,type,pos,size,color,parent);Object.Destroy(o.GetComponent<Collider>());}
+ static void RemoveVisualCollider(GameObject o){var collider=o.GetComponent<Collider>();if(!collider)return;collider.enabled=false;if(Application.isPlaying)Object.Destroy(collider);else Object.DestroyImmediate(collider);}
+ static void VisualPart(string name,PrimitiveType type,Vector3 pos,Vector3 size,Color color,Transform parent){var o=Part(name,type,pos,size,color,parent);RemoveVisualCollider(o);}
  public static Creature MakeCreature(Game game,int type,Vector3 pos,bool ally,CreatureRecord data=null){var root=new GameObject((ally?"Companion / ":"Wild / ")+Species.Names[type]);root.transform.position=pos;var cc=root.AddComponent<CharacterController>();cc.height=1.4f;cc.radius=.5f;cc.center=Vector3.up*.7f;cc.stepOffset=.4f;var c=root.AddComponent<Creature>();c.Init(type,ally,data);game.creatures.Add(c);
- var m=new GameObject("Visual").transform;m.SetParent(root.transform,false);c.model=m;Color color=Species.Colors[type];VisualPart("Body",PrimitiveType.Sphere,new Vector3(0,.65f,0),new Vector3(1.05f,.95f,1.3f),color,m);VisualPart("Head",PrimitiveType.Sphere,new Vector3(0,1.12f,.4f),new Vector3(.78f,.7f,.7f),color,m);
- for(int side=-1;side<=1;side+=2){VisualPart("Eye",PrimitiveType.Sphere,new Vector3(side*.23f,1.22f,.69f),new Vector3(.12f,.15f,.07f),new Color(.08f,.15f,.17f),m);VisualPart("Foot",PrimitiveType.Capsule,new Vector3(side*.36f,.25f,.2f),new Vector3(.27f,.25f,.4f),color*.8f,m);
- if(type==0)VisualPart("Leaf ear",PrimitiveType.Cube,new Vector3(side*.36f,1.57f,.33f),new Vector3(.18f,.56f,.2f),new Color(.7f,.84f,.34f),m);
- if(type==1)VisualPart("Fox ear",PrimitiveType.Capsule,new Vector3(side*.27f,1.53f,.3f),new Vector3(.2f,.3f,.22f),new Color(1,.76f,.37f),m);
- if(type==2)VisualPart("Horn",PrimitiveType.Capsule,new Vector3(side*.27f,1.56f,.44f),new Vector3(.13f,.33f,.13f),new Color(.92f,.87f,.68f),m);}
- VisualPart("Tail",PrimitiveType.Sphere,new Vector3(0,.85f,-.75f),new Vector3(.4f,.4f,.7f),type==1?new Color(1,.78f,.33f):color,m);return c;
+ var m=new GameObject("Visual").transform;m.SetParent(root.transform,false);c.model=m;
+ // These custom creatures have two legs; body classification is target metadata, not a source species mapping.
+ var profile=Locomotion.BodyMotionProfile.For(Locomotion.BodyArchetype.Biped);
+ var rig=Locomotion.PrimitiveBodyRig.Build(m,type,profile);
+ root.AddComponent<Locomotion.ProceduralBodyAnimator>().Bind(rig,c);return c;
  }
 }
 public class Billboard:MonoBehaviour {void LateUpdate(){if(Camera.main)transform.rotation=Camera.main.transform.rotation;}}

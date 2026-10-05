@@ -1,0 +1,124 @@
+{
+  "schema": 5,
+  "dex": 30,
+  "slug": "nidorina",
+  "name": "Nidorina",
+  "rig": "pm0030_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.2474,
+        "sole": 0.0093
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.2474,
+        "sole": 0.0093
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1823,
+        "sole": 0.0381
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1823,
+        "sole": 0.0381
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Neck", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["LEar1", "LEar2"],
+      ["REar1", "REar2"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8292,
+    "hipHeight": 0.2511,
+    "legLength": 0.2474,
+    "armLength": 0.1823,
+    "idleLift": -0.0532,
+    "normalized": { "hipHeight": 0.3028, "legLength": 0.2984, "armLength": 0.2198, "idleLift": -0.0641 },
+    "displayHeight": 2.55,
+    "stride": 1.569
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": true,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar1", "LEar2"],
+      ["REar1", "REar2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "forefeet", "reason": "Nidorina walks on all four legs (PokéAPI files it as a quadruped), but its idle (waitA01) sits up with the torso leaning about 50° forward and the forepaws raised in front of the belly (0.31 of its height at rest, 0.24 in the idle), so neither stance grounds them. Its forelimbs are shorter than the shoulder height; they reach the floor only once the torso pitches forward." }
+  ],
+  "warnings": []
+}

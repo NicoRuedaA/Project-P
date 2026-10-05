@@ -1,0 +1,129 @@
+{
+  "schema": 5,
+  "dex": 78,
+  "slug": "rapidash",
+  "name": "Rapidash",
+  "rig": "pm0078_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.4451,
+        "sole": 0.326
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.4451,
+        "sole": 0.326
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.5237,
+        "sole": 0.0773
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.5237,
+        "sole": 0.0773
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck1", "Neck2"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["LTailB01", "LTailB02", "LTailB03", "LTailB04", "LTailB05", "LTailB06"],
+      ["RTailB01", "RTailB02", "RTailB03", "RTailB04", "RTailB05", "RTailB06"],
+      ["TailB01", "TailB02", "TailB03", "TailB04", "TailB05", "TailB06", "TailB07", "TailB08", "TailB09", "TailB10", "TailB11"],
+      ["TailH01", "TailH02", "TailH03"],
+      ["LTailA01", "LTailA02", "LTailA03", "LTailA04", "LTailA05", "LTailA06"],
+      ["TailA01", "TailA02", "TailA03", "TailA04", "TailA05", "TailA06", "TailA07", "TailA08"],
+      ["TailC01", "TailC02"],
+      ["TailD01", "TailD02", "TailD03"],
+      ["TailE01", "TailE02"],
+      ["RTailA01", "RTailA02", "RTailA03", "RTailA04", "RTailA05", "RTailA06"],
+      ["TailF01", "TailF02", "TailF03"],
+      ["TailG01", "TailG02"]
+    ],
+    "body": ["Head", "Neck2", "Neck1", "Spine2", "Spine1", "Waist", "Spine1", "Spine2", "Neck1", "Neck2", "Head", "TailA01", "TailA02", "TailA03", "TailA04", "TailA05", "TailA06", "TailA07", "TailA08"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LEar"],
+      ["Nose"],
+      ["REar"]
+    ],
+    "duplicated": ["Head", "Hips", "Jaw", "LArm", "LEar", "LFoot", "LForeArm", "LHand", "LLeg", "LTailA01", "LTailA02", "LTailA03", "LTailA04", "LTailA05", "LTailA06", "LTailB01", "LTailB02", "LTailB03", "LTailB04", "LTailB05", "LTailB06", "LThigh", "LToe", "Neck1", "Neck2", "RArm", "REar", "RFoot", "RForeArm", "RHand", "RLeg", "RTailA01", "RTailA02", "RTailA03", "RTailA04", "RTailA05", "RTailA06", "RTailB01", "RTailB02", "RTailB03", "RTailB04", "RTailB05", "RTailB06", "RThigh", "RToe", "Spine1", "Spine2", "TailA01", "TailA02", "TailA03", "TailA04", "TailA05", "TailA06", "TailA07", "TailA08", "TailB01", "TailB02", "TailB03", "TailB04", "TailB05", "TailB06", "TailB07", "TailB08", "TailB09", "TailB10", "TailB11", "TailC01", "TailC02", "TailD01", "TailD02", "TailD03", "TailE01", "TailE02", "TailF01", "TailF02", "TailF03", "TailG01", "TailG02", "TailH01", "TailH02", "TailH03", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 2.5306,
+    "hipHeight": 0.7177,
+    "legLength": 0.4451,
+    "armLength": 0.5237,
+    "idleLift": -0.0137,
+    "normalized": { "hipHeight": 0.2836, "legLength": 0.1759, "armLength": 0.2069, "idleLift": -0.0054 },
+    "displayHeight": 2.55,
+    "stride": 1.2819
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["Nose"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

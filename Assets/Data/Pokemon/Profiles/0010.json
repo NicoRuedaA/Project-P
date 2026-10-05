@@ -1,0 +1,88 @@
+{
+  "schema": 5,
+  "dex": 10,
+  "slug": "caterpie",
+  "name": "Caterpie",
+  "rig": "pm0010_00_Rig",
+  "shape": "armor",
+  "archetype": "serpentine",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["FeelerB1", "FeelerB2"],
+      ["LFeelerB"],
+      ["RFeelerB"],
+      ["FeelerA1", "FeelerA2"],
+      ["LFeelerA"],
+      ["RFeelerA"],
+      ["Nose"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": [],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["physical", "walk", "run"],
+  "metrics": {
+    "height": 0.6133,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "slither",
+    "wave": "vertical",
+    "medium": "amphibious",
+    "swim": "undulate",
+    "paddles": false,
+    "sway": [
+      ["FeelerB1", "FeelerB2"],
+      ["LFeelerB"],
+      ["RFeelerB"],
+      ["FeelerA1", "FeelerA2"],
+      ["LFeelerA"],
+      ["RFeelerA"],
+      ["Nose"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "crawl", "reason": "Caterpie is a caterpillar that crawls along its whole body, like Weedle. Its body chain (Head, Spine2, Spine1, Waist, Hips, Tail1-Tail3) has five segments of length once the joints that sit on the waist are left out, short of the eight the rules want for a travelling wave, so they would hop it like a cocoon." },
+    { "field": "wave", "reason": "Caterpie crawls like a caterpillar: its body humps up and down along the ground (the looping crawl of an inchworm), not side to side like a snake. Nothing in the rig tells the plane apart from a snake's (a round body chain with tiny feet along the belly), so the vertical wave comes from here." }
+  ],
+  "warnings": []
+}

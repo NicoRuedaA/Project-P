@@ -1,0 +1,71 @@
+{
+  "schema": 5,
+  "dex": 23,
+  "slug": "ekans",
+  "name": "Ekans",
+  "rig": "pm0023_00_Rig",
+  "shape": "squiggle",
+  "archetype": "serpentine",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine1", "Spine2", "Spine3", "Spine4", "Spine5", "Spine6", "Spine7", "Spine8"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerJaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9", "Tail10", "Tail11", "Tail12", "Tail13"]
+    ],
+    "body": ["Head", "Spine8", "Spine7", "Spine6", "Spine5", "Spine4", "Spine3", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9", "Tail10", "Tail11", "Tail12", "Tail13"],
+    "wings": [],
+    "appendages": [
+      ["UpperJaw"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01_euler",
+    "idle": "waitA01_euler",
+    "idleAlt": null,
+    "physical": ["buturi01_Euler_EveryframeCompressed"],
+    "special": ["tokusyu01_euler"],
+    "hit": "damageS01_euler",
+    "faint": "down01_euler",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 3.3867,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "slither",
+    "wave": "lateral",
+    "medium": "amphibious",
+    "swim": "undulate",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

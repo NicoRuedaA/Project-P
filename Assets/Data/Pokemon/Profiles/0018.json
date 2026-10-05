@@ -1,0 +1,129 @@
+{
+  "schema": 5,
+  "dex": 18,
+  "slug": "pidgeot",
+  "name": "Pidgeot",
+  "rig": "pm0018_00_Rig",
+  "shape": "wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "wings:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.3003,
+        "sole": 0.0824
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.3003,
+        "sole": 0.0824
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "arm",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "span": [0.9852, -0.0854, -0.1485],
+        "normal": [0.024, 0.8479, -0.5296],
+        "area": 0.558
+      },
+      {
+        "side": "R",
+        "source": "arm",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "span": [-0.9852, -0.0854, -0.1485],
+        "normal": [-0.024, 0.8479, -0.5296],
+        "area": 0.558
+      }
+    ],
+    "appendages": [
+      ["LToeA1", "LToeA2"],
+      ["LToeB1", "LToeB2"],
+      ["LToeC1", "LToeC2"],
+      ["LToeD"],
+      ["RToeA1", "RToeA2"],
+      ["RToeB1", "RToeB2"],
+      ["RToeC1", "RToeC2"],
+      ["RToeD"],
+      ["LFeeler1", "LFeeler2"],
+      ["HairC1", "HairC2", "HairC3", "HairC4", "HairC5", "HairC6"],
+      ["LHairA1", "LHairA2", "LHairA3", "LHairA4", "LHairA5", "LHairA6"],
+      ["LHairB1", "LHairB2", "LHairB3", "LHairB4", "LHairB5", "LHairB6"],
+      ["RHairA1", "RHairA2", "RHairA3", "RHairA4", "RHairA5", "RHairA6"],
+      ["RHairB1", "RHairB2", "RHairB3", "RHairB4", "RHairB5", "RHairB6"],
+      ["RFeeler1", "RFeeler2"]
+    ],
+    "duplicated": ["Hips", "LArm", "LFeeler1", "LFeeler2", "LFoot", "LForeArm", "LLeg", "LShoulder", "LThigh", "LToeC1", "LToeD", "Neck", "RArm", "RFeeler1", "RFeeler2", "RFoot", "RForeArm", "RLeg", "RShoulder", "RThigh", "RToeC1", "RToeD", "Spine1", "Spine2", "Tail1", "Tail2"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.0311,
+    "hipHeight": 0.381,
+    "legLength": 0.3003,
+    "armLength": 0.5422,
+    "idleLift": 0.5965,
+    "normalized": { "hipHeight": 0.3695, "legLength": 0.2912, "armLength": 0.5259, "idleLift": 0.5785 },
+    "displayHeight": 2.55,
+    "stride": 1.803
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeeler1", "LFeeler2"],
+      ["HairC1", "HairC2", "HairC3", "HairC4", "HairC5", "HairC6"],
+      ["LHairA1", "LHairA2", "LHairA3", "LHairA4", "LHairA5", "LHairA6"],
+      ["LHairB1", "LHairB2", "LHairB3", "LHairB4", "LHairB5", "LHairB6"],
+      ["RHairA1", "RHairA2", "RHairA3", "RHairA4", "RHairA5", "RHairA6"],
+      ["RHairB1", "RHairB2", "RHairB3", "RHairB4", "RHairB5", "RHairB6"],
+      ["RFeeler1", "RFeeler2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

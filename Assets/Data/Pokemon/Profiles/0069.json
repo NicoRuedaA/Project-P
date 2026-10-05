@@ -1,0 +1,133 @@
+{
+  "schema": 5,
+  "dex": 69,
+  "slug": "bellsprout",
+  "name": "Bellsprout",
+  "rig": "pm0069_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LLeg2",
+        "lower": "LLeg3",
+        "effector": "LFoot1",
+        "chain": ["LThigh", "LLeg1", "LLeg2", "LLeg3", "LFoot1"],
+        "length": 0.0927,
+        "sole": 0.078
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RLeg2",
+        "lower": "RLeg3",
+        "effector": "RFoot1",
+        "chain": ["RThigh", "RLeg1", "RLeg2", "RLeg3", "RFoot1"],
+        "length": 0.0957,
+        "sole": 0.0755
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1925,
+        "spread": 0
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1925,
+        "spread": 0
+      }
+    ],
+    "spine": ["Spine1", "Spine2", "Spine3", "Spine4", "Spine5"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Neck", "Spine5", "Spine4", "Spine3", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFoot2"],
+      ["LToeA1", "LToeA2", "LToeA3"],
+      ["LToeA4"],
+      ["LToeB1", "LToeB2", "LToeB3"],
+      ["RFoot2", "RToeC"],
+      ["RToeA1", "RToeA2", "RToeA3"],
+      ["RToeB1", "RToeB2", "RToeB3"],
+      ["RToeB4"],
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LFeeler"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["RFeeler"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01_RemovedScale"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8719,
+    "hipHeight": 0.1582,
+    "legLength": 0.0942,
+    "armLength": 0.1925,
+    "idleLift": -0.0908,
+    "normalized": { "hipHeight": 0.1815, "legLength": 0.108, "armLength": 0.2207, "idleLift": -0.1041 },
+    "displayHeight": 2.55,
+    "stride": 0.3797
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LFeeler"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["RFeeler"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

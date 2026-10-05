@@ -1,0 +1,84 @@
+{
+  "schema": 5,
+  "dex": 132,
+  "slug": "ditto",
+  "name": "Ditto",
+  "rig": "pm0132_00_Rig",
+  "shape": "ball",
+  "archetype": "serpentine",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "HeadA",
+    "jaw": null,
+    "tails": [],
+    "body": ["HeadA", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LArm"],
+      ["LFootA"],
+      ["LFootB"],
+      ["LFootC"],
+      ["LHand"],
+      ["RArm"],
+      ["RFootA"],
+      ["RFootB"],
+      ["RFootC"],
+      ["RHand"],
+      ["Spine"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": [],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["physical", "walk", "run"],
+  "metrics": {
+    "height": 0.5615,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "medium": "land",
+    "swim": "drift",
+    "paddles": false,
+    "sway": [
+      ["LArm"],
+      ["RArm"],
+      ["Spine"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Ditto as a ball; its rig is a blob with no legs, wings or tail (HeadA over Waist, with stubby arm and foot appendages) whose idle rests on the ground. Too short to slither, it hops like the cocoons (Metapod, Kakuna) of the serpentine archetype, the archetype of bodies that move on their own body chain." }
+  ],
+  "warnings": []
+}

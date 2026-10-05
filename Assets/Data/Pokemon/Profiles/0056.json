@@ -1,0 +1,129 @@
+{
+  "schema": 5,
+  "dex": 56,
+  "slug": "mankey",
+  "name": "Mankey",
+  "rig": "pm0056_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.263,
+        "sole": 0.1278
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.263,
+        "sole": 0.1278
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.3286,
+        "spread": 0.5935
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.3286,
+        "spread": 0.5935
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"]
+    ],
+    "body": ["Waist", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["LEar"],
+      ["LToeA1", "LToeA2"],
+      ["LToeB1", "LToeB2"],
+      ["LToeC"],
+      ["Nose"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"],
+      ["REar"],
+      ["RToeA1", "RToeA2"],
+      ["RToeB1", "RToeB2"],
+      ["RToeC"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.7428,
+    "hipHeight": 0.3362,
+    "legLength": 0.263,
+    "armLength": 0.3286,
+    "idleLift": 0.0079,
+    "normalized": { "hipHeight": 0.4526, "legLength": 0.354, "armLength": 0.4423, "idleLift": 0.0106 },
+    "displayHeight": 2.55,
+    "stride": 2.4546
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["Nose"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

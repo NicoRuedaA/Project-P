@@ -1,0 +1,145 @@
+{
+  "schema": 5,
+  "dex": 75,
+  "slug": "graveler",
+  "name": "Graveler",
+  "rig": "pm0075_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LFoot"],
+        "length": null,
+        "sole": 0.0606
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RFoot"],
+        "length": null,
+        "sole": 0.0606
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.464,
+        "spread": 0.5344
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.464,
+        "spread": 0.5344
+      },
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm2",
+        "lower": "LForeArm2",
+        "effector": "LHand2",
+        "chain": ["LArm2", "LForeArm2", "LHand2"],
+        "length": 0.2529,
+        "spread": 0.4864
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm2",
+        "lower": "RForeArm2",
+        "effector": "RHand2",
+        "chain": ["RArm2", "RForeArm2", "RHand2"],
+        "length": 0.2529,
+        "spread": 0.4864
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2"],
+      ["LFingerC1", "LFingerC2"],
+      ["LFingerD1", "LFingerD2"],
+      ["LFingerE1", "LFingerE2"],
+      ["LFingerF1", "LFingerF2"],
+      ["LToe"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2"],
+      ["RFingerC1", "RFingerC2"],
+      ["RFingerD1", "RFingerD2"],
+      ["RFingerE1", "RFingerE2"],
+      ["RFingerF1", "RFingerF2"],
+      ["RToe"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8045,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.464,
+    "idleLift": -0.003,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.5767, "idleLift": -0.0037 },
+    "displayHeight": 2.55,
+    "stride": 0.9612
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "biped-legs", "message": "biped without a left/right pair of complete leg chains (2 leg chains resolved)" },
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LThigh>LFoot, RThigh>RFoot" }
+  ]
+}

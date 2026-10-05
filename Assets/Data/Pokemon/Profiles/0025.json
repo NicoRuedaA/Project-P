@@ -1,0 +1,124 @@
+{
+  "schema": 5,
+  "dex": 25,
+  "slug": "pikachu",
+  "name": "Pikachu",
+  "rig": "pm0025_00_Rig",
+  "shape": "quadruped",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "trLThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["trLThigh", "LLeg", "LFoot"],
+        "length": 0.1288,
+        "sole": 0.0174
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "trRThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["trRThigh", "RLeg", "RFoot"],
+        "length": 0.1288,
+        "sole": 0.0174
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "trLArm",
+        "lower": "trLForeArm",
+        "effector": "LHand",
+        "chain": ["trLShoulder", "trLArm", "trLForeArm", "LHand"],
+        "length": 0.094,
+        "spread": 0.7925
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "trRArm",
+        "lower": "trRForeArm",
+        "effector": "RHand",
+        "chain": ["trRShoulder", "trRArm", "trRForeArm", "RHand"],
+        "length": 0.094,
+        "spread": 0.7925
+      }
+    ],
+    "spine": ["trSpine1", "trSpine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "trSpine2", "trSpine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["Feeler"],
+      ["LToe"],
+      ["RToe"],
+      ["LEar1", "LEar2", "LEar3"],
+      ["REar1", "REar2", "REar3"]
+    ],
+    "duplicated": ["Hips", "Tail1", "Tail2", "Tail3"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.4708,
+    "hipHeight": 0.0742,
+    "legLength": 0.1288,
+    "armLength": 0.094,
+    "idleLift": null,
+    "normalized": { "hipHeight": 0.1577, "legLength": 0.2735, "armLength": 0.1997, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 2.7064
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Feeler"],
+      ["LEar1", "LEar2", "LEar3"],
+      ["REar1", "REar2", "REar3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Pikachu as a quadruped, but its rig stands upright on two legs: the spine rises almost straight from the waist to the head (about 9° from vertical) and the forepaws rest in front of the chest at 0.23 of its height. Its forelimbs (0.09 model units from shoulder to hand) cannot reach the floor from the shoulders (0.18 above it). The rig has no clips, so the rest pose is its stance." }
+  ],
+  "warnings": [
+    { "code": "helper-joint", "message": "chains run through transform helpers trLThigh, trRThigh, trLArm, trLForeArm, trRArm, trRForeArm, trSpine1, trSpine2; name lookups must use them" },
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

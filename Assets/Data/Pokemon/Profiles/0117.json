@@ -1,0 +1,101 @@
+{
+  "schema": 5,
+  "dex": 117,
+  "slug": "seadra",
+  "name": "Seadra",
+  "rig": "pm0117_00_Rig",
+  "shape": "blob",
+  "archetype": "aquatic",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LEar"],
+      ["REar"],
+      ["trNose1", "trNose2", "Nose3"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB"],
+      ["LFeelerC"],
+      ["LFeelerD"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB"],
+      ["RFeelerC"],
+      ["RFeelerD"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 1.2412,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "wave": "lateral",
+    "medium": "water",
+    "swim": "undulate",
+    "paddles": true,
+    "sway": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LEar"],
+      ["REar"],
+      ["trNose1", "trNose2", "Nose3"],
+      ["LFeelerA1", "LFeelerA2"],
+      ["LFeelerB"],
+      ["LFeelerC"],
+      ["LFeelerD"],
+      ["RFeelerA1", "RFeelerA2"],
+      ["RFeelerB"],
+      ["RFeelerC"],
+      ["RFeelerD"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Seadra as a blob, but it is a seahorse that lives in the sea: an upright body (Head, Spine, Waist) over a curled tail (Tail1-Tail3), with fins and no limbs. The rig has no clips, so nothing shows it hovering or standing; as an aquatic body it never leaves the water and beats its tail, its fins sculling with the beat." }
+  ],
+  "warnings": [
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

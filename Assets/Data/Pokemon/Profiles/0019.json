@@ -1,0 +1,124 @@
+{
+  "schema": 5,
+  "dex": 19,
+  "slug": "rattata",
+  "name": "Rattata",
+  "rig": "pm0019_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LLeg", "LFoot"],
+        "length": 0.1469,
+        "sole": 0.0661
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RLeg", "RFoot"],
+        "length": 0.1469,
+        "sole": 0.0661
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.1632,
+        "sole": 0.0263
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.1632,
+        "sole": 0.0263
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6"]
+    ],
+    "body": ["Head", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6"],
+    "wings": [],
+    "appendages": [
+      ["LToe1", "LToe2"],
+      ["RToe1", "RToe2"],
+      ["LEar1", "LEar2"],
+      ["LFeeler1", "LFeeler2"],
+      ["Nose"],
+      ["REar1", "REar2"],
+      ["RFeeler1", "RFeeler2"],
+      ["LFinger"],
+      ["RFinger"]
+    ],
+    "duplicated": ["Head", "Hips", "Jaw", "LArm", "LEar1", "LEar2", "LFeeler1", "LFeeler2", "LFinger", "LFoot", "LForeArm", "LHand", "LHips", "LLeg", "LShoulder", "LThigh", "LToe1", "LToe2", "Nose", "RArm", "REar1", "REar2", "RFeeler1", "RFeeler2", "RFinger", "RFoot", "RForeArm", "RHand", "RHips", "RLeg", "RShoulder", "RThigh", "RToe1", "RToe2", "Spine1", "Spine2", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.3876,
+    "hipHeight": 0.1792,
+    "legLength": 0.1469,
+    "armLength": 0.1632,
+    "idleLift": 0.0011,
+    "normalized": { "hipHeight": 0.4623, "legLength": 0.3789, "armLength": 0.4211, "idleLift": 0.0028 },
+    "displayHeight": 2.55,
+    "stride": 2.9943
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar1", "LEar2"],
+      ["LFeeler1", "LFeeler2"],
+      ["Nose"],
+      ["REar1", "REar2"],
+      ["RFeeler1", "RFeeler2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

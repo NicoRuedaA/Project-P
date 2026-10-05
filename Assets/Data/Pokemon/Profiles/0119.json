@@ -1,0 +1,101 @@
+{
+  "schema": 5,
+  "dex": 119,
+  "slug": "seaking",
+  "name": "Seaking",
+  "rig": "pm0119_00_Rig",
+  "shape": "fish",
+  "archetype": "aquatic",
+  "traits": ["arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.1424,
+        "spread": 0.1611
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.1424,
+        "spread": 0.1611
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerJaw",
+    "tails": [
+      ["Tail1", "Tail2"],
+      ["LTailA1", "LTailA2", "LTailA3", "LTailA4"],
+      ["LTailB1", "LTailB2", "LTailB3"],
+      ["RTailA1", "RTailA2", "RTailA3", "RTailA4"],
+      ["RTailB1", "RTailB2", "RTailB3"]
+    ],
+    "body": ["Head", "Waist", "Hips", "Tail1", "Tail2", "RTailA1", "RTailA2", "RTailA3", "RTailA4"],
+    "wings": [],
+    "appendages": [
+      ["FeelerB"],
+      ["UpperJaw"],
+      ["FeelerA"]
+    ],
+    "duplicated": ["Head", "UpperJaw", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.764,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.1424,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.1864, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "wave": "lateral",
+    "medium": "water",
+    "swim": "undulate",
+    "paddles": true,
+    "sway": [
+      ["FeelerB"],
+      ["FeelerA"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

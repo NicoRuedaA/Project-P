@@ -1,0 +1,128 @@
+{
+  "schema": 5,
+  "dex": 126,
+  "slug": "magmar",
+  "name": "Magmar",
+  "rig": "pm0126_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LLeg", "LFoot"],
+        "length": 0.3084,
+        "sole": 0.0959
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RLeg", "RFoot"],
+        "length": 0.3084,
+        "sole": 0.0959
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.4516,
+        "spread": 0.595
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.4516,
+        "spread": 0.595
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "LowerJaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "TailA01", "TailA02", "TailA03", "TailA04"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "TailA01", "TailA02", "TailA03", "TailA04"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["LFingerD"],
+      ["LFingerE"],
+      ["LFeeler1", "LFeeler2", "LFeeler3"],
+      ["RFeeler1", "RFeeler2", "RFeeler3"],
+      ["UpperJaw"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"],
+      ["RFingerD"],
+      ["RFingerE"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_landA01",
+    "idle": "ba10_waitA01",
+    "idleAlt": null,
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["ba01_landB01", "ba01_landC01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.8812,
+    "hipHeight": 0.7623,
+    "legLength": 0.3084,
+    "armLength": 0.4516,
+    "idleLift": 0.0173,
+    "normalized": { "hipHeight": 0.4052, "legLength": 0.1639, "armLength": 0.24, "idleLift": 0.0092 },
+    "displayHeight": 2.55,
+    "stride": 1.0007
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeeler1", "LFeeler2", "LFeeler3"],
+      ["RFeeler1", "RFeeler2", "RFeeler3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

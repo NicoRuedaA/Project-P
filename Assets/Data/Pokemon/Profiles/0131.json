@@ -1,0 +1,117 @@
+{
+  "schema": 5,
+  "dex": 131,
+  "slug": "lapras",
+  "name": "Lapras",
+  "rig": "pm0131_00_Rig",
+  "shape": "fish",
+  "archetype": "aquatic",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.6189,
+        "sole": 0.0557
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.6189,
+        "sole": 0.0556
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 1.0099,
+        "sole": 0.0676
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 1.0099,
+        "sole": 0.0662
+      }
+    ],
+    "arms": [],
+    "spine": [],
+    "neck": ["Neck1", "Neck2", "Neck3"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2"]
+    ],
+    "body": ["Head", "Neck3", "Neck2", "Neck1", "Waist", "Tail1", "Tail2"],
+    "wings": [],
+    "appendages": [
+      ["LEar"],
+      ["REar"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 2.1471,
+    "hipHeight": 0.2199,
+    "legLength": 0.6189,
+    "armLength": 1.0099,
+    "idleLift": null,
+    "normalized": { "hipHeight": 0.1024, "legLength": 0.2883, "armLength": 0.4704, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 1.9004
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "medium": "amphibious",
+    "swim": "paddle",
+    "paddles": true,
+    "sway": [
+      ["LEar"],
+      ["REar"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

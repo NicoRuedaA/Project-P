@@ -1,0 +1,143 @@
+{
+  "schema": 5,
+  "dex": 123,
+  "slug": "scyther",
+  "name": "Scyther",
+  "rig": "pm0123_00_Rig",
+  "shape": "bug-wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "arms:2", "wings:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.3876,
+        "sole": 0.1167
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.3876,
+        "sole": 0.1167
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.7513,
+        "spread": 0.5608
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.7513,
+        "spread": 0.5608
+      }
+    ],
+    "spine": ["Spine"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Neck", "Spine", "Waist"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerA"],
+        "span": [0, 0.1139, -0.9935],
+        "normal": [1, 0.0001, 0.0001],
+        "area": 0.1421
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerA"],
+        "span": [0, 0.1139, -0.9935],
+        "normal": [1, -0.0001, -0.0001],
+        "area": 0.1421
+      },
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerB"],
+        "span": [0, 0.1042, -0.9946],
+        "normal": [1, 0, 0],
+        "area": 0.0854
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerB"],
+        "span": [0, 0.1042, -0.9946],
+        "normal": [1, 0, 0],
+        "area": 0.0854
+      }
+    ],
+    "appendages": [
+      ["LToe"],
+      ["RToe"]
+    ],
+    "duplicated": ["Head", "Hips", "Jaw", "LArm", "LFeelerA", "LFeelerB", "LFoot", "LForeArm", "LHand", "LLeg", "LShoulder", "LThigh", "LToe", "Neck", "RArm", "RFeelerA", "RFeelerB", "RFoot", "RForeArm", "RHand", "RLeg", "RShoulder", "RThigh", "RToe", "Spine", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2842,
+    "hipHeight": 0.4929,
+    "legLength": 0.3876,
+    "armLength": 0.7513,
+    "idleLift": 0.3954,
+    "normalized": { "hipHeight": 0.3838, "legLength": 0.3018, "armLength": 0.585, "idleLift": 0.3079 },
+    "displayHeight": 2.55,
+    "stride": 1.9613
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

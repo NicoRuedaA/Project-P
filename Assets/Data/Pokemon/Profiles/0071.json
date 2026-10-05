@@ -1,0 +1,114 @@
+{
+  "schema": 5,
+  "dex": 71,
+  "slug": "victreebel",
+  "name": "Victreebel",
+  "rig": "pm0071_00_Rig",
+  "shape": "blob",
+  "archetype": "hopper",
+  "traits": ["legs:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.4072,
+        "sole": 0.0881
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.4072,
+        "sole": 0.0881
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "JawD",
+    "tails": [
+      ["Tail01", "Tail02", "Tail03", "Tail04", "Tail05", "Tail06", "Tail07", "Tail08", "Tail09", "Tail10", "Tail11", "Tail12"]
+    ],
+    "body": ["Head", "Spine2", "Spine1", "Waist", "Spine1", "Spine2", "Head", "FeelerA", "Tail01", "Tail02", "Tail03", "Tail04", "Tail05", "Tail06", "Tail07", "Tail08", "Tail09", "Tail10", "Tail11", "Tail12"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["Feeler1", "Feeler2"],
+      ["LFeeler"],
+      ["RFeeler"],
+      ["JawE"],
+      ["LJawA"],
+      ["LJawB"],
+      ["LJawC", "LTeeth"],
+      ["RJawA"],
+      ["RJawB"],
+      ["RJawC", "RTeeth"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.1714,
+    "hipHeight": 0.2132,
+    "legLength": 0.4072,
+    "armLength": null,
+    "idleLift": 0.5006,
+    "normalized": { "hipHeight": 0.182, "legLength": 0.3477, "armLength": null, "idleLift": 0.4273 },
+    "displayHeight": 2.55,
+    "stride": 1.2411
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": true,
+    "restTails": ["Tail01"],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Feeler1", "Feeler2"],
+      ["LFeeler"],
+      ["RFeeler"]
+    ],
+    "bounce": {
+      "leaves": [
+        ["LThigh", "LLeg", "LFoot"],
+        ["RThigh", "RLeg", "RFoot"]
+      ],
+      "hanging": [
+        ["Tail01", "Tail02", "Tail03", "Tail04", "Tail05", "Tail06", "Tail07", "Tail08", "Tail09", "Tail10", "Tail11", "Tail12"]
+      ]
+    }
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

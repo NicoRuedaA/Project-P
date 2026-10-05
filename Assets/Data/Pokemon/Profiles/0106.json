@@ -1,0 +1,125 @@
+{
+  "schema": 5,
+  "dex": 106,
+  "slug": "hitmonlee",
+  "name": "Hitmonlee",
+  "rig": "pm0106_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg2",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg1", "LLeg2", "LFoot"],
+        "length": 0.4181,
+        "sole": 0.111,
+        "flat": true,
+        "attached": ["LToe"]
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg2",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg1", "RLeg2", "RFoot"],
+        "length": 0.4181,
+        "sole": 0.111,
+        "flat": true,
+        "attached": ["RToe"]
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.5425,
+        "spread": 0.0898
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.5425,
+        "spread": 0.0898
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["Hips"],
+      ["LHips"],
+      ["RHips"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2"],
+      ["LFingerC1", "LFingerC2"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2"],
+      ["RFingerC1", "RFingerC2"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2919,
+    "hipHeight": 0.5291,
+    "legLength": 0.4181,
+    "armLength": 0.5425,
+    "idleLift": -0.0048,
+    "normalized": { "hipHeight": 0.4095, "legLength": 0.3236, "armLength": 0.4199, "idleLift": -0.0037 },
+    "displayHeight": 2.55,
+    "stride": 2.038
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Hips"],
+      ["LHips"],
+      ["RHips"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

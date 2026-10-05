@@ -1,0 +1,131 @@
+{
+  "schema": 5,
+  "dex": 113,
+  "slug": "chansey",
+  "name": "Chansey",
+  "rig": "pm0113_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LFoot"],
+        "length": null,
+        "sole": 0.0667
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RFoot"],
+        "length": null,
+        "sole": 0.0409
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.181,
+        "spread": 0.8555
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.181,
+        "spread": 0.8555
+      }
+    ],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA1", "FeelerA2"],
+      ["LToe"],
+      ["RToe"],
+      ["LHairA1", "LHairA2", "LHairA3"],
+      ["LHairB1", "LHairB2", "LHairB3"],
+      ["LHairC1", "LHairC2", "LHairC3"],
+      ["RHairA1", "RHairA2", "RHairA3"],
+      ["RHairB1", "RHairB2", "RHairB3"],
+      ["RHairC1", "RHairC2", "RHairC3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 1.0856,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.181,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.1668, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 2.7185
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA1", "FeelerA2"],
+      ["LHairA1", "LHairA2", "LHairA3"],
+      ["LHairB1", "LHairB2", "LHairB3"],
+      ["LHairC1", "LHairC2", "LHairC3"],
+      ["RHairA1", "RHairA2", "RHairA3"],
+      ["RHairB1", "RHairB2", "RHairB3"],
+      ["RHairC1", "RHairC2", "RHairC3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "biped-legs", "message": "biped without a left/right pair of complete leg chains (2 leg chains resolved)" },
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LThigh>LFoot, RThigh>RFoot" },
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

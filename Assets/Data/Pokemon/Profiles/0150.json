@@ -1,0 +1,127 @@
+{
+  "schema": 5,
+  "dex": 150,
+  "slug": "mewtwo",
+  "name": "Mewtwo",
+  "rig": "pm0150_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.6813,
+        "sole": 0.3572
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.6813,
+        "sole": 0.3583
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.5973,
+        "spread": 0.4768
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.5973,
+        "spread": 0.4768
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["LToeA"],
+      ["LToeB"],
+      ["RToe"],
+      ["RToeA"],
+      ["RToeB"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2"],
+      ["LFingerC1", "LFingerC2"],
+      ["Feeler1", "Feeler2", "Feeler3", "Feeler4", "Feeler5"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2"],
+      ["RFingerC1", "RFingerC2"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 2.0118,
+    "hipHeight": 0.9392,
+    "legLength": 0.6813,
+    "armLength": 0.5973,
+    "idleLift": null,
+    "normalized": { "hipHeight": 0.4668, "legLength": 0.3387, "armLength": 0.2969, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 2.5463
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Feeler1", "Feeler2", "Feeler3", "Feeler4", "Feeler5"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

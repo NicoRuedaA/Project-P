@@ -1,0 +1,124 @@
+{
+  "schema": 5,
+  "dex": 49,
+  "slug": "venomoth",
+  "name": "Venomoth",
+  "rig": "pm0049_00_Rig",
+  "shape": "bug-wings",
+  "archetype": "winged",
+  "traits": ["wings:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerA1", "LFeelerA2"],
+        "span": [0.4853, -0.7775, -0.3999],
+        "normal": [0.5133, -0.1169, 0.8502],
+        "area": 0.1625
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerA1", "RFeelerA2"],
+        "span": [-0.4853, -0.7775, -0.4],
+        "normal": [-0.5133, -0.1169, 0.8502],
+        "area": 0.1625
+      },
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerB1", "LFeelerB2"],
+        "span": [0.7256, 0.5256, -0.4441],
+        "normal": [0.5579, -0.0729, 0.8267],
+        "area": 0.4577
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerB1", "RFeelerB2"],
+        "span": [-0.7256, 0.5256, -0.4441],
+        "normal": [-0.5579, -0.0729, 0.8267],
+        "area": 0.4577
+      }
+    ],
+    "appendages": [
+      ["LFeelerD"],
+      ["RFeelerD"],
+      ["RootJaw"],
+      ["LFeelerC"],
+      ["RFeelerC"],
+      ["LArm", "LForeArm"],
+      ["LArm2", "LForeArm2"],
+      ["LArm3", "LForeArm3"],
+      ["RArm", "RForeArm"],
+      ["RArm2", "RForeArm2"],
+      ["RArm3", "RForeArm3"]
+    ],
+    "duplicated": ["Head", "Hips", "LArm", "LArm2", "LArm3", "LFeelerA1", "LFeelerA2", "LFeelerB1", "LFeelerB2", "LFeelerC", "LFeelerD", "LForeArm", "LForeArm2", "LForeArm3", "RArm", "RArm2", "RArm3", "RFeelerA1", "RFeelerA2", "RFeelerB1", "RFeelerB2", "RFeelerC", "RFeelerD", "RForeArm", "RForeArm2", "RForeArm3", "Spine", "Tail1", "Tail2", "Tail3", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": [],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["physical", "walk", "run"],
+  "metrics": {
+    "height": 1.1409,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerD"],
+      ["RFeelerD"],
+      ["RootJaw"],
+      ["LFeelerC"],
+      ["RFeelerC"],
+      ["LArm", "LForeArm"],
+      ["LArm2", "LForeArm2"],
+      ["LArm3", "LForeArm3"],
+      ["RArm", "RForeArm"],
+      ["RArm2", "RForeArm2"],
+      ["RArm3", "RForeArm3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

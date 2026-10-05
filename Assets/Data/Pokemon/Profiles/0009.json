@@ -1,0 +1,139 @@
+{
+  "schema": 5,
+  "dex": 9,
+  "slug": "blastoise",
+  "name": "Blastoise",
+  "rig": "pm0009_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.3283,
+        "sole": 0.0795
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.3283,
+        "sole": 0.0795
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.371,
+        "spread": 0.8062
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.371,
+        "spread": 0.8062
+      }
+    ],
+    "spine": [],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2"]
+    ],
+    "body": ["Head", "Neck", "Waist", "Tail1", "Tail2"],
+    "wings": [],
+    "appendages": [
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["LFeelerA", "LFeelerB", "LFeelerC"],
+      ["LFeelerD"],
+      ["LToeA"],
+      ["LToeB"],
+      ["LToeC"],
+      ["LToeD"],
+      ["LEar"],
+      ["REar"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"],
+      ["RFeelerA", "RFeelerB", "RFeelerC"],
+      ["RFeelerD"],
+      ["RToeA"],
+      ["RToeB"],
+      ["RToeC"],
+      ["RToeD"]
+    ],
+    "duplicated": ["Head", "LArm", "LEar", "LFeelerA", "LFeelerB", "LFeelerC", "LFeelerD", "LForeArm", "LHand", "Neck", "RArm", "REar", "RFeelerA", "RFeelerB", "RFeelerC", "RFeelerD", "RForeArm", "RHand", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2959,
+    "hipHeight": 0.394,
+    "legLength": 0.3283,
+    "armLength": 0.371,
+    "idleLift": -0.0055,
+    "normalized": { "hipHeight": 0.3041, "legLength": 0.2533, "armLength": 0.2863, "idleLift": -0.0043 },
+    "displayHeight": 2.8,
+    "stride": 1.8821
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerA", "LFeelerB", "LFeelerC"],
+      ["LFeelerD"],
+      ["LEar"],
+      ["REar"],
+      ["RFeelerA", "RFeelerB", "RFeelerC"],
+      ["RFeelerD"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "displayHeight", "reason": "Hand-tuned battle size, kept until a generic size rule replaces the 2.55-unit default." }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 5,
+  "dex": 120,
+  "slug": "staryu",
+  "name": "Staryu",
+  "rig": "pm0120_00_Rig",
+  "shape": "blob",
+  "archetype": "aquatic",
+  "traits": ["legs:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.2213,
+        "sole": 0.1214
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.2213,
+        "sole": 0.1214
+      }
+    ],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "Head1",
+    "jaw": null,
+    "tails": [],
+    "body": ["Head1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LShoulder", "LArm", "LForeArm"],
+      ["RShoulder", "RArm", "RForeArm"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8874,
+    "hipHeight": 0.2995,
+    "legLength": 0.2213,
+    "armLength": null,
+    "idleLift": -0.001,
+    "normalized": { "hipHeight": 0.3374, "legLength": 0.2494, "armLength": null, "idleLift": -0.0011 },
+    "displayHeight": 2.55,
+    "stride": 1.3046
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "medium": "water",
+    "swim": "paddle",
+    "paddles": true,
+    "sway": [
+      ["LShoulder", "LArm", "LForeArm"],
+      ["RShoulder", "RArm", "RForeArm"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "Staryu's idle stands on the two lower points of its star (LThigh-LFoot, RThigh-RFoot), so the rules read a biped, but it is a sea star that lives in the sea (PokéAPI files it as a blob). As an aquatic body those points are paddles that stroke and its upper points (the LShoulder and RShoulder chains) sway; rig-overrides.json keeps it in the water." },
+    { "field": "medium", "reason": "Staryu is a sea star that lives in the water. Its lower points reach the floor, so as an aquatic body the rules would let it haul itself ashore on them like a seal on its flippers; it stays in the water instead." }
+  ],
+  "warnings": []
+}

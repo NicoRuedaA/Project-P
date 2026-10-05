@@ -1,0 +1,122 @@
+{
+  "schema": 5,
+  "dex": 121,
+  "slug": "starmie",
+  "name": "Starmie",
+  "rig": "pm0121_00_Rig",
+  "shape": "blob",
+  "archetype": "aquatic",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LLeg", "LFoot"],
+        "length": null,
+        "sole": 0.1706
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RLeg", "RFoot"],
+        "length": null,
+        "sole": 0.1706
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.1718,
+        "spread": 0.4719
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.1718,
+        "spread": 0.4719
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head1",
+    "jaw": null,
+    "tails": [
+      ["LTailA"],
+      ["LTailB"],
+      ["RTailA"],
+      ["RTailB"],
+      ["Tail"]
+    ],
+    "body": ["Head1", "Waist", "Feeler", "Tail"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.0975,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.1718,
+    "idleLift": -0.0053,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.1565, "idleLift": -0.0048 },
+    "displayHeight": 2.55,
+    "stride": 0.3066
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "medium": "water",
+    "swim": "paddle",
+    "paddles": true,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "Starmie's idle stands on two of its lower points (LLeg-LFoot, RLeg-RFoot), so the rules read a biped, but it is a sea star that lives in the sea (PokéAPI files it as a blob). As an aquatic body those points and its side points (LArm-LHand, RArm-RHand) are paddles that stroke, two sets in alternation; rig-overrides.json keeps it in the water." },
+    { "field": "medium", "reason": "Starmie is a sea star that lives in the water. Its lower points reach the floor, so as an aquatic body the rules would let it haul itself ashore on them like a seal on its flippers; it stays in the water instead." }
+  ],
+  "warnings": [
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LLeg>LFoot, RLeg>RFoot" }
+  ]
+}

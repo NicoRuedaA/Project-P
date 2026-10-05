@@ -1,0 +1,99 @@
+{
+  "schema": 5,
+  "dex": 118,
+  "slug": "goldeen",
+  "name": "Goldeen",
+  "rig": "pm0118_00_Rig",
+  "shape": "fish",
+  "archetype": "aquatic",
+  "traits": ["arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.1317,
+        "spread": 0.4396
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.1317,
+        "spread": 0.4396
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": "JawA",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"],
+      ["LTail1", "LTail2", "LTail3"],
+      ["RTail1", "RTail2", "RTail3"]
+    ],
+    "body": ["Head", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA"],
+      ["JawB"],
+      ["FeelerB"]
+    ],
+    "duplicated": ["FeelerA", "FeelerB", "Head", "Hips", "JawA", "JawB", "LArm", "LForeArm", "LHand", "LTail1", "LTail2", "LTail3", "RArm", "RForeArm", "RHand", "RTail1", "RTail2", "RTail3", "Tail1", "Tail2", "Tail3", "Tail4", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.3082,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.1317,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.4275, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "wave": "lateral",
+    "medium": "water",
+    "swim": "undulate",
+    "paddles": true,
+    "sway": [
+      ["FeelerA"],
+      ["FeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

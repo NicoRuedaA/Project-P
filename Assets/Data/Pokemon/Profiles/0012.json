@@ -1,0 +1,137 @@
+{
+  "schema": 5,
+  "dex": 12,
+  "slug": "butterfree",
+  "name": "Butterfree",
+  "rig": "pm0012_00_Rig",
+  "shape": "bug-wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "wings:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LFoot"],
+        "length": null,
+        "sole": 0.0396
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RFoot"],
+        "length": null,
+        "sole": 0.0396
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [],
+    "body": ["Head", "Spine", "Waist"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerA1", "LFeelerA2"],
+        "span": [0.8793, 0.4763, 0.0035],
+        "normal": [0, 0, 1],
+        "area": 0.4711
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerA1", "RFeelerA2"],
+        "span": [-0.8793, 0.4762, 0.0036],
+        "normal": [0, 0, 1],
+        "area": 0.4774
+      },
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerB1", "LFeelerB2"],
+        "span": [0.8387, -0.5416, -0.0573],
+        "normal": [0.0083, -0.0035, 1],
+        "area": 0.2013
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerB1", "RFeelerB2"],
+        "span": [-0.8387, -0.5416, -0.0573],
+        "normal": [-0.0068, -0.0026, 1],
+        "area": 0.2013
+      }
+    ],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LFeelerC1", "LFeelerC2", "LFeelerC3", "LFeelerC4", "LFeelerC5", "LFeelerC6", "LFeelerC7"],
+      ["RFeelerC1", "RFeelerC2", "RFeelerC3", "RFeelerC4", "RFeelerC5", "RFeelerC6", "RFeelerC7"],
+      ["LHand"],
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["RHand"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"]
+    ],
+    "duplicated": ["LFeelerA1", "LFeelerA2", "LFeelerB1", "RFeelerA1", "RFeelerA2", "RFeelerB1", "Spine"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.0765,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": 0.444,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": 0.4125 },
+    "displayHeight": 2.55,
+    "stride": 0.4793
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerC1", "LFeelerC2", "LFeelerC3", "LFeelerC4", "LFeelerC5", "LFeelerC6", "LFeelerC7"],
+      ["RFeelerC1", "RFeelerC2", "RFeelerC3", "RFeelerC4", "RFeelerC5", "RFeelerC6", "RFeelerC7"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LThigh>LFoot, RThigh>RFoot" }
+  ]
+}

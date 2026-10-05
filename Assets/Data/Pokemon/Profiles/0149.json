@@ -1,0 +1,146 @@
+{
+  "schema": 5,
+  "dex": 149,
+  "slug": "dragonite",
+  "name": "Dragonite",
+  "rig": "pm0149_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "wings:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.5107,
+        "sole": 0.4002
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.5107,
+        "sole": 0.3388
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.4669,
+        "spread": 0.6632
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.4669,
+        "spread": 0.6632
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerA1", "LFeelerA2", "LFeelerA3", "LFeelerA4", "LFeelerA5"],
+        "span": [0.8161, 0.0607, -0.5747],
+        "normal": [-0.3732, 0.8387, -0.3966],
+        "area": 0.1512
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerA1", "RFeelerA2", "RFeelerA3", "RFeelerA4", "RFeelerA5"],
+        "span": [-0.9928, 0.0018, -0.1201],
+        "normal": [0.1207, 0.7865, -0.6057],
+        "area": 0.1414
+      }
+    ],
+    "appendages": [
+      ["LToe"],
+      ["LToeA"],
+      ["LToeB"],
+      ["LToeC"],
+      ["RToe"],
+      ["RToeA"],
+      ["RToeB"],
+      ["RToeC"],
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["LFeelerC1", "LFeelerC2", "LFeelerC3"],
+      ["RFeelerC1", "RFeelerC2", "RFeelerC3"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_land01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01", "ba20_buturi02"],
+    "special": ["ba21_tokusyu01", "ba21_tokusyu02"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 2.1218,
+    "hipHeight": 0.8378,
+    "legLength": 0.5107,
+    "armLength": 0.4669,
+    "idleLift": -0.0462,
+    "normalized": { "hipHeight": 0.3949, "legLength": 0.2407, "armLength": 0.22, "idleLift": -0.0218 },
+    "displayHeight": 2.55,
+    "stride": 1.6565
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerC1", "LFeelerC2", "LFeelerC3"],
+      ["RFeelerC1", "RFeelerC2", "RFeelerC3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

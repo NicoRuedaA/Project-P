@@ -1,0 +1,136 @@
+{
+  "schema": 5,
+  "dex": 99,
+  "slug": "kingler",
+  "name": "Kingler",
+  "rig": "pm0099_00_Rig",
+  "shape": "armor",
+  "archetype": "arthropod",
+  "traits": ["legs:4", "arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh2",
+        "lower": "LLeg2",
+        "effector": "LFoot2",
+        "chain": ["LThigh2", "LLeg2", "LFoot2"],
+        "length": 0.6659,
+        "sole": 0.059
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh2",
+        "lower": "RLeg2",
+        "effector": "RFoot2",
+        "chain": ["RThigh2", "RLeg2", "RFoot2"],
+        "length": 0.6659,
+        "sole": 0.059
+      },
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.655,
+        "sole": 0.0741
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.655,
+        "sole": 0.0741
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.6838,
+        "spread": 1.1719
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.5328,
+        "spread": 1.1719
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["LFingerA"],
+      ["LFingerB"],
+      ["RFingerA"],
+      ["RFingerB"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.6385,
+    "hipHeight": 0.2143,
+    "legLength": 0.655,
+    "armLength": 0.6083,
+    "idleLift": -0.0427,
+    "normalized": { "hipHeight": 0.1308, "legLength": 0.3998, "armLength": 0.3713, "idleLift": -0.026 },
+    "displayHeight": 2.55,
+    "stride": 3.7023
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 0,
+    "vines": [],
+    "sitUp": false,
+    "multileg": true,
+    "sideways": true,
+    "medium": "amphibious",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "medium", "reason": "Kingler is a crab that lives on beaches: it scuttles over the sand and into the sea, where it swims paddling with its legs. Its rig (two leg pairs spread to either side under a wide shell, one huge claw and one small) looks to the rules like any land arthropod's, such as Parasect's, so its amphibious medium comes from here." }
+  ],
+  "warnings": []
+}

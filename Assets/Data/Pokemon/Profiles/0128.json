@@ -1,0 +1,128 @@
+{
+  "schema": 5,
+  "dex": 128,
+  "slug": "tauros",
+  "name": "Tauros",
+  "rig": "pm0128_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.509,
+        "sole": 0.2768
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.509,
+        "sole": 0.2768
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder1", "LShoulder2", "LArm", "LForeArm", "LHand"],
+        "length": 0.4162,
+        "sole": 0.0587
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder1", "RShoulder2", "RArm", "RForeArm", "RHand"],
+        "length": 0.4162,
+        "sole": 0.0587
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"],
+      ["LTail1", "LTail2", "LTail3", "LTail4", "LTail5", "LTail6", "LTail7"],
+      ["RTail1", "RTail2", "RTail3", "RTail4", "RTail5", "RTail6", "RTail7"]
+    ],
+    "body": ["Head", "Neck", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"],
+    "wings": [],
+    "appendages": [
+      ["LToe1"],
+      ["RToe1"],
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["Nose"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.2049,
+    "hipHeight": 0.7017,
+    "legLength": 0.509,
+    "armLength": 0.4162,
+    "idleLift": -0.0221,
+    "normalized": { "hipHeight": 0.5823, "legLength": 0.4225, "armLength": 0.3454, "idleLift": -0.0183 },
+    "displayHeight": 2.55,
+    "stride": 2.4097
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["Nose"],
+      ["RFeelerA"],
+      ["RFeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

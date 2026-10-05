@@ -1,0 +1,68 @@
+{
+  "schema": 5,
+  "dex": 14,
+  "slug": "kakuna",
+  "name": "Kakuna",
+  "rig": "pm0014_00_Rig",
+  "shape": "squiggle",
+  "archetype": "serpentine",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [
+      ["Tail"]
+    ],
+    "body": ["Waist", "Tail"],
+    "wings": [],
+    "appendages": [],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": [],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["physical", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.7304,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "medium": "land",
+    "swim": "drift",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

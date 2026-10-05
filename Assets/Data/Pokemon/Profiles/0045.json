@@ -1,0 +1,109 @@
+{
+  "schema": 5,
+  "dex": 45,
+  "slug": "vileplume",
+  "name": "Vileplume",
+  "rig": "pm0045_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LLeg", "LFoot"],
+        "length": null,
+        "sole": 0.045
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RLeg", "RFoot"],
+        "length": null,
+        "sole": 0.045
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [],
+    "body": ["Head", "Spine", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["LShoulder", "LArm"],
+      ["RToe"],
+      ["RShoulder", "RArm"],
+      ["FeelerF1", "FeelerF2"],
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2"],
+      ["FeelerC1", "FeelerC2"],
+      ["FeelerD1", "FeelerD2"],
+      ["FeelerE1", "FeelerE2"]
+    ],
+    "duplicated": ["FeelerA1", "FeelerA2", "FeelerB1", "FeelerB2", "FeelerC1", "FeelerC2", "FeelerD1", "FeelerD2", "FeelerE1", "FeelerE2", "FeelerF1", "FeelerF2", "Head", "Hips", "LArm", "LFoot", "LLeg", "LShoulder", "LToe", "RArm", "RFoot", "RLeg", "RShoulder", "RToe", "Spine", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.1163,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": -0.0017,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": -0.0015 },
+    "displayHeight": 2.55,
+    "stride": 2.5308
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LShoulder", "LArm"],
+      ["RShoulder", "RArm"],
+      ["FeelerF1", "FeelerF2"],
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2"],
+      ["FeelerC1", "FeelerC2"],
+      ["FeelerD1", "FeelerD2"],
+      ["FeelerE1", "FeelerE2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "biped-legs", "message": "biped without a left/right pair of complete leg chains (2 leg chains resolved)" },
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LLeg>LFoot, RLeg>RFoot" }
+  ]
+}

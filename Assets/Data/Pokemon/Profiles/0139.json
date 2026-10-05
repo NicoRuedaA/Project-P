@@ -1,0 +1,163 @@
+{
+  "schema": 5,
+  "dex": 139,
+  "slug": "omastar",
+  "name": "Omastar",
+  "rig": "pm0139_00_Rig",
+  "shape": "tentacles",
+  "archetype": "aquatic",
+  "traits": ["legs:6", "arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.1168,
+        "sole": 0.0438
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.1168,
+        "sole": 0.0438
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm2",
+        "lower": "LForeArm2",
+        "effector": "LHand2",
+        "chain": ["LShoulder2", "LArm2", "LForeArm2", "LHand2"],
+        "length": 0.1831,
+        "sole": 0.0213
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm2",
+        "lower": "RForeArm2",
+        "effector": "RHand2",
+        "chain": ["RShoulder2", "RArm2", "RForeArm2", "RHand2"],
+        "length": 0.1831,
+        "sole": 0.0213
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LArm3",
+        "lower": "LForeArm3",
+        "effector": "LHand3",
+        "chain": ["LArm3", "LForeArm3", "LHand3"],
+        "length": 0.1875,
+        "sole": 0.0201
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RArm3",
+        "lower": "RForeArm3",
+        "effector": "RHand3",
+        "chain": ["RArm3", "RForeArm3", "RHand3"],
+        "length": 0.1875,
+        "sole": 0.0201
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.2592,
+        "spread": 0.6444
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.2592,
+        "spread": 0.6444
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": "LLowerJaw",
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["Hair"],
+      ["LFeelerA"],
+      ["LFeelerB1", "LFeelerB2", "LFeelerB3", "LFeelerB4"],
+      ["LUpperJaw"],
+      ["RFeelerA"],
+      ["RFeelerB1", "RFeelerB2", "RFeelerB3", "RFeelerB4"],
+      ["RLowerJaw"],
+      ["RUpperJaw"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.9985,
+    "hipHeight": 0.1259,
+    "legLength": 0.1168,
+    "armLength": 0.2592,
+    "idleLift": -0.1581,
+    "normalized": { "hipHeight": 0.1261, "legLength": 0.117, "armLength": 0.2596, "idleLift": -0.1583 },
+    "displayHeight": 2.55,
+    "stride": 0.5536
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "drag",
+    "medium": "amphibious",
+    "swim": "paddle",
+    "paddles": true,
+    "sway": [
+      ["Hair"],
+      ["LFeelerA"],
+      ["LFeelerB1", "LFeelerB2", "LFeelerB3", "LFeelerB4"],
+      ["RFeelerA"],
+      ["RFeelerB1", "RFeelerB2", "RFeelerB3", "RFeelerB4"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

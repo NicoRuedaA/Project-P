@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Wildbound {
 [Serializable] public class CreatureRecord {
- public string id; public int species; public int level=1; public int xp; public float health=100;
+ public string id; public int species; public string combatLoadoutId; public int level=1; public int xp; public float health=100;
  public CreatureRecord(int type){id=Guid.NewGuid().ToString("N");species=type;}
  public void GainXP(int amount){xp+=amount;while(xp>=level*40){xp-=level*40;level++;}health=100;}
 }

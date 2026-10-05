@@ -1,0 +1,150 @@
+{
+  "schema": 5,
+  "dex": 15,
+  "slug": "beedrill",
+  "name": "Beedrill",
+  "rig": "pm0015_00_Rig",
+  "shape": "bug-wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "arms:2", "wings:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.5337,
+        "sole": 0.0684
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.5337,
+        "sole": 0.0684
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.2529,
+        "spread": 0.6165
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.2529,
+        "spread": 0.6165
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Waist", "Tail1", "Tail2", "Tail3"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerA"],
+        "span": [0.8444, -0.1327, -0.519],
+        "normal": [0.4578, -0.3299, 0.8256],
+        "area": 0.1673
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerA"],
+        "span": [-0.8444, -0.1327, -0.519],
+        "normal": [-0.4578, -0.3299, 0.8256],
+        "area": 0.1673
+      },
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerB"],
+        "span": [0.8649, 0.4307, -0.258],
+        "normal": [0.4262, -0.3497, 0.8343],
+        "area": 0.2548
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerB"],
+        "span": [-0.8649, 0.4307, -0.258],
+        "normal": [-0.4262, -0.3497, 0.8343],
+        "area": 0.2548
+      }
+    ],
+    "appendages": [
+      ["LFeelerC1", "LFeelerC2"],
+      ["RFeelerC1", "RFeelerC2"],
+      ["LToe1", "LToe2"],
+      ["RToe1", "RToe2"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["loop01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.9963,
+    "hipHeight": 0.4995,
+    "legLength": 0.5337,
+    "armLength": 0.2529,
+    "idleLift": 0.3786,
+    "normalized": { "hipHeight": 0.5013, "legLength": 0.5356, "armLength": 0.2538, "idleLift": 0.38 },
+    "displayHeight": 2.55,
+    "stride": 3.7972
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerC1", "LFeelerC2"],
+      ["RFeelerC1", "RFeelerC2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

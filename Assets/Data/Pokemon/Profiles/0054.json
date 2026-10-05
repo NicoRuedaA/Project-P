@@ -1,0 +1,129 @@
+{
+  "schema": 5,
+  "dex": 54,
+  "slug": "psyduck",
+  "name": "Psyduck",
+  "rig": "pm0054_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LFoot"],
+        "length": null,
+        "sole": 0.056
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RFoot"],
+        "length": null,
+        "sole": 0.056
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.2248,
+        "spread": 0.7833
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.2248,
+        "spread": 0.7833
+      }
+    ],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerJaw",
+    "tails": [
+      ["Tail1", "Tail2"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2"],
+    "wings": [],
+    "appendages": [
+      ["LToeA"],
+      ["LToeB"],
+      ["LToeC"],
+      ["RToeA"],
+      ["RToeB"],
+      ["RToeC"],
+      ["FeelerA", "FeelerB"],
+      ["UpperJaw"],
+      ["LFingerA"],
+      ["LFingerB"],
+      ["LFingerC"],
+      ["RFingerA"],
+      ["RFingerB"],
+      ["RFingerC"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.9957,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.2248,
+    "idleLift": -0.0006,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.2258, "idleLift": -0.0006 },
+    "displayHeight": 2.55,
+    "stride": 1.8735
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA", "FeelerB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "biped-legs", "message": "biped without a left/right pair of complete leg chains (2 leg chains resolved)" },
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LThigh>LFoot, RThigh>RFoot" }
+  ]
+}

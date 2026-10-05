@@ -1,0 +1,113 @@
+{
+  "schema": 5,
+  "dex": 70,
+  "slug": "weepinbell",
+  "name": "Weepinbell",
+  "rig": "pm0070_00_Rig",
+  "shape": "blob",
+  "archetype": "hopper",
+  "traits": ["arms:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LForeArm", "LHand"],
+        "length": 0.4112,
+        "spread": 0.053
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RForeArm", "RHand"],
+        "length": 0.4112,
+        "spread": 0.053
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head1",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head1", "Waist", "Tail1", "Tail2", "Tail3"],
+    "wings": [],
+    "appendages": [
+      ["Hair1", "Hair2", "Hair3", "Hair4", "Hair5"],
+      ["LFeeler"],
+      ["RFeeler"],
+      ["LJaw"],
+      ["LJawA"],
+      ["LJawB"],
+      ["LowerJaw"],
+      ["RJaw"],
+      ["RJawA"],
+      ["RJawB"],
+      ["UpperJaw"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.1811,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": 0.4112,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": 0.3481, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Hair1", "Hair2", "Hair3", "Hair4", "Hair5"],
+      ["LFeeler"],
+      ["RFeeler"]
+    ],
+    "bounce": {
+      "leaves": [
+        ["LArm", "LForeArm", "LHand"],
+        ["RArm", "RForeArm", "RHand"]
+      ],
+      "hanging": []
+    }
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "Weepinbell's idle (waitA01) holds its bell 0.33 of its height off the ground, so the rules read a floater, but it is a bell plant like Victreebel, which the rules read as a hopper from its lifted leaves: a bell (Waist and Head1, its lips on Tail1-Tail3) under a hooked stem (Head2, Hair1-Hair5), with leaves for arms. Hovering like a ghost would not animate that; it hops on the base of its bell, swinging from its stem, its leaves flapping." }
+  ],
+  "warnings": []
+}

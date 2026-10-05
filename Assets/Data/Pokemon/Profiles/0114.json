@@ -1,0 +1,104 @@
+{
+  "schema": 5,
+  "dex": 114,
+  "slug": "tangela",
+  "name": "Tangela",
+  "rig": "pm0114_00_Rig",
+  "shape": "legs",
+  "archetype": "biped",
+  "traits": ["legs:2"],
+  "skeleton": {
+    "root": "trWaist",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": null,
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LFoot"],
+        "length": null,
+        "sole": 0.1154
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": null,
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RFoot"],
+        "length": null,
+        "sole": 0.1179
+      }
+    ],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2"],
+      ["FeelerC1", "FeelerC2"],
+      ["FeelerF1", "FeelerF2"],
+      ["FeelerG1", "FeelerG2"],
+      ["LToe"],
+      ["RToe"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.9882,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": 3.2036
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB1", "FeelerB2"],
+      ["FeelerC1", "FeelerC2"],
+      ["FeelerF1", "FeelerF2"],
+      ["FeelerG1", "FeelerG2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "biped-legs", "message": "biped without a left/right pair of complete leg chains (2 leg chains resolved)" },
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LThigh>LFoot, RThigh>RFoot" },
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}

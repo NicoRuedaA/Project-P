@@ -1,0 +1,96 @@
+{
+  "schema": 5,
+  "dex": 81,
+  "slug": "magnemite",
+  "name": "Magnemite",
+  "rig": "pm0081_00_Rig",
+  "shape": "arms",
+  "archetype": "floater",
+  "traits": ["arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": null,
+        "lower": "LArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LHand"],
+        "length": null,
+        "spread": 1.0285
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": null,
+        "lower": "RArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RHand"],
+        "length": null,
+        "spread": 1.0285
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": null,
+    "jaw": null,
+    "tails": [],
+    "body": ["Waist"],
+    "wings": [],
+    "appendages": [
+      ["Feeler"],
+      ["LFoot"],
+      ["RFoot"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.5674,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "hover": true,
+    "hoverLift": 1.5804,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Feeler"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LArm>LHand, RArm>RHand" }
+  ]
+}

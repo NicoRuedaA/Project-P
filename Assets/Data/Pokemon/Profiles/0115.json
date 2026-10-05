@@ -1,0 +1,183 @@
+{
+  "schema": 5,
+  "dex": 115,
+  "slug": "kangaskhan",
+  "name": "Kangaskhan",
+  "rig": "pm0115_00_Rig",
+  "shape": "upright",
+  "archetype": "biped",
+  "traits": ["legs:4", "arms:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.4309,
+        "sole": 0.0939
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.4309,
+        "sole": 0.0939
+      },
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh2",
+        "lower": "LLeg2",
+        "effector": "LFoot2",
+        "chain": ["LThigh2", "LLeg2", "LFoot2"],
+        "length": 0.0845,
+        "sole": 0.0255
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh2",
+        "lower": "RLeg2",
+        "effector": "RFoot2",
+        "chain": ["RThigh2", "RLeg2", "RFoot2"],
+        "length": 0.0845,
+        "sole": 0.0255
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.6489,
+        "spread": 0.6184
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.6489,
+        "spread": 0.6184
+      },
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm2",
+        "lower": "LForeArm2",
+        "effector": "LHand2",
+        "chain": ["LShoulder2", "LArm2", "LForeArm2", "LHand2"],
+        "length": 0.0936,
+        "spread": 0.4987
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm2",
+        "lower": "RForeArm2",
+        "effector": "RHand2",
+        "chain": ["RShoulder2", "RArm2", "RForeArm2", "RHand2"],
+        "length": 0.0937,
+        "spread": 0.4987
+      }
+    ],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerJaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"],
+      ["TailB1", "TailB2"]
+    ],
+    "body": ["Head", "Spine", "WaistA", "Waist", "WaistA", "Hips", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["FeelerC1", "FeelerC2"],
+      ["LToeA"],
+      ["LToeB"],
+      ["LToeC"],
+      ["RToeA"],
+      ["RToeB"],
+      ["RToeC"],
+      ["LEar"],
+      ["REar"],
+      ["UpperJaw"],
+      ["LFeeler"],
+      ["RFeeler"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2"],
+      ["LFingerC1", "LFingerC2"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2"],
+      ["RFingerC1", "RFingerC2"],
+      ["LToe2"],
+      ["RToe2"],
+      ["LEarB"],
+      ["REarB"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.5816,
+    "hipHeight": 0.4796,
+    "legLength": 0.4309,
+    "armLength": 0.6489,
+    "idleLift": -0.0077,
+    "normalized": { "hipHeight": 0.3033, "legLength": 0.2724, "armLength": 0.4103, "idleLift": -0.0048 },
+    "displayHeight": 2.55,
+    "stride": 1.9687
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerC1", "FeelerC2"],
+      ["LEar"],
+      ["REar"],
+      ["LFeeler"],
+      ["RFeeler"],
+      ["LEarB"],
+      ["REarB"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "archetype-mismatch", "message": "biped (upright) expects 2 weight-bearing limbs, the skeleton has 4" }
+  ]
+}

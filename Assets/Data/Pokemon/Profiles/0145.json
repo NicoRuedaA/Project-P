@@ -1,0 +1,155 @@
+{
+  "schema": 5,
+  "dex": 145,
+  "slug": "zapdos",
+  "name": "Zapdos",
+  "rig": "pm0145_00_Rig",
+  "shape": "wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "wings:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.3096,
+        "sole": 0.1812
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.3096,
+        "sole": 0.1812
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3"]
+    ],
+    "body": ["Head", "Neck", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LFeelerE", "LFeelerE1"],
+        "span": [0.9627, 0.2638, 0.0594],
+        "normal": [-0.0071, -0.2418, 0.9703],
+        "area": 0.3976
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RFeelerE", "RFeelerE1"],
+        "span": [-0.9627, 0.2638, 0.0594],
+        "normal": [0.0071, -0.2418, 0.9703],
+        "area": 0.3976
+      },
+      {
+        "side": "L",
+        "source": "membrane",
+        "chain": ["LShoulder"],
+        "span": [0.9722, 0.2273, 0.0569],
+        "normal": [0.0008, -0.2429, 0.9701],
+        "area": 0.4988
+      },
+      {
+        "side": "R",
+        "source": "membrane",
+        "chain": ["RShoulder"],
+        "span": [-0.9722, 0.2273, 0.0569],
+        "normal": [-0.0008, -0.2429, 0.9701],
+        "area": 0.4988
+      }
+    ],
+    "appendages": [
+      ["LToeA1", "LToeA2", "LToeA3"],
+      ["LToeB1", "LToeB2", "LToeB3"],
+      ["LToeC1", "LToeC2", "LToeC3"],
+      ["LToeD1", "LToeD2"],
+      ["RToeA1", "RToeA2", "RToeA3"],
+      ["RToeB1", "RToeB2", "RToeB3"],
+      ["RToeC1", "RToeC2", "RToeC3"],
+      ["RToeD1", "RToeD2"],
+      ["LFeelerE2"],
+      ["LFeelerE3"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["LFeelerC"],
+      ["LFeelerD"],
+      ["RFeelerE2"],
+      ["RFeelerE3"],
+      ["RFeelerA"],
+      ["RFeelerB"],
+      ["RFeelerC"],
+      ["RFeelerD"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_land01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01", "ba20_buturi02"],
+    "special": ["ba21_tokusyu01", "ba21_tokusyu02"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": "fi01_wait01",
+    "walk": "fi20_walk01",
+    "run": "fi21_run01",
+    "other": ["kw01_wait01", "kw30_hate01", "kw32_happyB01", "kw50_eatA01", "kw50_eatB01", "kw50_eatC01"]
+  },
+  "missingClips": [],
+  "metrics": {
+    "height": 1.3921,
+    "hipHeight": 0.6646,
+    "legLength": 0.3096,
+    "armLength": null,
+    "idleLift": 0.5628,
+    "normalized": { "hipHeight": 0.4774, "legLength": 0.2224, "armLength": null, "idleLift": 0.4043 },
+    "displayHeight": 2.55,
+    "stride": 0.794
+  },
+  "motion": {
+    "flight": "perpetual",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LFeelerE2"],
+      ["LFeelerE3"],
+      ["LFeelerA"],
+      ["LFeelerB"],
+      ["LFeelerC"],
+      ["LFeelerD"],
+      ["RFeelerE2"],
+      ["RFeelerE3"],
+      ["RFeelerA"],
+      ["RFeelerB"],
+      ["RFeelerC"],
+      ["RFeelerD"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

@@ -1,0 +1,112 @@
+{
+  "schema": 5,
+  "dex": 51,
+  "slug": "dugtrio",
+  "name": "Dugtrio",
+  "rig": "pm0051_00_Rig",
+  "shape": "heads",
+  "archetype": "burrower",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "HeadA",
+    "jaw": null,
+    "tails": [],
+    "body": ["HeadA", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["FeelerC"],
+      ["SpineA1"],
+      ["SpineA2"],
+      ["SpineA3"],
+      ["SpineB1"],
+      ["SpineB2"],
+      ["SpineB3"],
+      ["SpineB4"],
+      ["SpineC1"],
+      ["SpineC2"],
+      ["SpineC3"],
+      ["SpineC4"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01_mtAdjust",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.7862,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "burrow",
+    "burrow": {
+      "columns": [
+        {
+          "base": "SpineA1",
+          "joints": ["SpineA2", "SpineA3", "FeelerA", "HeadA"]
+        },
+        {
+          "base": "SpineB1",
+          "joints": ["SpineB2", "SpineB3", "SpineB4", "FeelerB", "HeadB"]
+        },
+        {
+          "base": "SpineC1",
+          "joints": ["SpineC2", "SpineC3", "SpineC4", "FeelerC", "HeadC"]
+        }
+      ]
+    },
+    "medium": "landlocked",
+    "swim": "drift",
+    "paddles": false,
+    "sway": [
+      ["FeelerA"],
+      ["FeelerB"],
+      ["FeelerC"],
+      ["SpineA1"],
+      ["SpineA2"],
+      ["SpineA3"],
+      ["SpineB1"],
+      ["SpineB2"],
+      ["SpineB3"],
+      ["SpineB4"],
+      ["SpineC1"],
+      ["SpineC2"],
+      ["SpineC3"],
+      ["SpineC4"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

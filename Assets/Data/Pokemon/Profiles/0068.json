@@ -1,0 +1,150 @@
+{
+  "schema": 5,
+  "dex": 68,
+  "slug": "machamp",
+  "name": "Machamp",
+  "rig": "pm0068_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:4"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.4798,
+        "sole": 0.1057
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.4798,
+        "sole": 0.1057
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm",
+        "lower": "LForeArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "length": 0.4943,
+        "spread": 0.3413
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm",
+        "lower": "RForeArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "length": 0.4943,
+        "spread": 0.3413
+      },
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": "LArm2",
+        "lower": "LForeArm2",
+        "effector": "LHand2",
+        "chain": ["LShoulder2", "LArm2", "LForeArm2", "LHand2"],
+        "length": 0.4756,
+        "spread": 0.6053
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": "RArm2",
+        "lower": "RForeArm2",
+        "effector": "RHand2",
+        "chain": ["RShoulder2", "RArm2", "RForeArm2", "RHand2"],
+        "length": 0.4756,
+        "spread": 0.6053
+      }
+    ],
+    "spine": ["Spine1", "Spine2"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [],
+    "body": ["Head", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["LToe"],
+      ["RToe"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2", "LFingerB3"],
+      ["LFingerC1", "LFingerC2", "LFingerC3"],
+      ["LFingerD1", "LFingerD2", "LFingerD3"],
+      ["LFingerE1", "LFingerE2", "LFingerE3"],
+      ["LFingerF1", "LFingerF2"],
+      ["LFingerG1", "LFingerG2", "LFingerG3"],
+      ["LFingerH1", "LFingerH2", "LFingerH3"],
+      ["LFingerI1", "LFingerI2", "LFingerI3"],
+      ["LFingerJ1", "LFingerJ2", "LFingerJ3"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2", "RFingerB3"],
+      ["RFingerC1", "RFingerC2", "RFingerC3"],
+      ["RFingerD1", "RFingerD2", "RFingerD3"],
+      ["RFingerE1", "RFingerE2", "RFingerE3"],
+      ["RFingerF1", "RFingerF2"],
+      ["RFingerG1", "RFingerG2", "RFingerG3"],
+      ["RFingerH1", "RFingerH2", "RFingerH3"],
+      ["RFingerI1", "RFingerI2", "RFingerI3"],
+      ["RFingerJ1", "RFingerJ2", "RFingerJ3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.3999,
+    "hipHeight": 0.5624,
+    "legLength": 0.4798,
+    "armLength": 0.4943,
+    "idleLift": -0.0131,
+    "normalized": { "hipHeight": 0.4017, "legLength": 0.3427, "armLength": 0.3531, "idleLift": -0.0093 },
+    "displayHeight": 2.55,
+    "stride": 2.6309
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": []
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

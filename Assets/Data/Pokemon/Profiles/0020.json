@@ -1,0 +1,132 @@
+{
+  "schema": 5,
+  "dex": 20,
+  "slug": "raticate",
+  "name": "Raticate",
+  "rig": "pm0020_00_Rig",
+  "shape": "quadruped",
+  "archetype": "quadruped",
+  "traits": ["legs:4", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LFoot",
+        "effector": "LToeA2",
+        "chain": ["LThigh", "LFoot", "LToeA1", "LToeA2"],
+        "length": 0.5433,
+        "sole": 0.0246
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RFoot",
+        "effector": "RToeA2",
+        "chain": ["RThigh", "RFoot", "RToeA1", "RToeA2"],
+        "length": 0.5433,
+        "sole": 0.0246
+      },
+      {
+        "side": "L",
+        "role": "front-leg",
+        "upper": "LShoulder",
+        "lower": "LArm",
+        "effector": "LHand",
+        "chain": ["LShoulder", "LArm", "LHand"],
+        "length": 0.2236,
+        "sole": 0.0308
+      },
+      {
+        "side": "R",
+        "role": "front-leg",
+        "upper": "RShoulder",
+        "lower": "RArm",
+        "effector": "RHand",
+        "chain": ["RShoulder", "RArm", "RHand"],
+        "length": 0.2236,
+        "sole": 0.0308
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"],
+    "wings": [],
+    "appendages": [
+      ["LToeB1", "LToeB2"],
+      ["LToeC1", "LToeC2"],
+      ["RToeB1", "RToeB2"],
+      ["RToeC1", "RToeC2"],
+      ["LEar"],
+      ["LFeeler1", "LFeeler2"],
+      ["Nose"],
+      ["REar"],
+      ["RFeeler1", "RFeeler2"],
+      ["LFingerA1", "LFingerA2"],
+      ["LFingerB1", "LFingerB2"],
+      ["LFingerC1", "LFingerC2"],
+      ["RFingerA1", "RFingerA2"],
+      ["RFingerB1", "RFingerB2"],
+      ["RFingerC1", "RFingerC2"]
+    ],
+    "duplicated": ["Head", "Hips", "Jaw", "LArm", "LEar", "LFeeler1", "LFeeler2", "LFingerA1", "LFingerA2", "LFingerB1", "LFingerB2", "LFingerC1", "LFingerC2", "LFoot", "LHand", "LShoulder", "LThigh", "LToeA1", "LToeA2", "LToeB1", "LToeB2", "LToeC1", "LToeC2", "Nose", "RArm", "REar", "RFeeler1", "RFeeler2", "RFingerA1", "RFingerA2", "RFingerB1", "RFingerB2", "RFingerC1", "RFingerC2", "RFoot", "RHand", "RShoulder", "RThigh", "RToeA1", "RToeA2", "RToeB1", "RToeB2", "RToeC1", "RToeC2", "Spine", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8524,
+    "hipHeight": 0.3295,
+    "legLength": 0.5433,
+    "armLength": 0.2236,
+    "idleLift": -0.0135,
+    "normalized": { "hipHeight": 0.3865, "legLength": 0.6373, "armLength": 0.2623, "idleLift": -0.0159 },
+    "displayHeight": 2.55,
+    "stride": 1.8295
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": true,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["LEar"],
+      ["LFeeler1", "LFeeler2"],
+      ["Nose"],
+      ["REar"],
+      ["RFeeler1", "RFeeler2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "forefeet", "reason": "Raticate walks on all four legs, but its idle (waitA01) and its bind pose sit up on the haunches with the forepaws raised in front of the chest (0.36 of its height at rest, 0.39 in the idle), so neither stance grounds them. Its forelimbs are shorter than the shoulder height; they reach the floor only once the torso pitches forward." }
+  ],
+  "warnings": []
+}

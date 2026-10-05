@@ -1,0 +1,89 @@
+{
+  "schema": 5,
+  "dex": 130,
+  "slug": "gyarados",
+  "name": "Gyarados",
+  "rig": "pm0130_00_Rig",
+  "shape": "squiggle",
+  "archetype": "serpentine",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine1", "Spine2", "Spine3", "Spine4", "Spine5"],
+    "neck": ["Neck"],
+    "head": "Head",
+    "jaw": "LowerBeak",
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"]
+    ],
+    "body": ["Head", "Neck", "Spine5", "Spine4", "Spine3", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7", "Tail8", "Tail9"],
+    "wings": [],
+    "appendages": [
+      ["FeelerD"],
+      ["FeelerE"],
+      ["FeelerC"],
+      ["FeelerB"],
+      ["LEar"],
+      ["LFeelerA1", "LFeelerA2", "LFeelerA3", "LFeelerA4", "LFeelerA5", "LFeelerA6"],
+      ["REar"],
+      ["RFeelerA1", "RFeelerA2", "RFeelerA3", "RFeelerA4", "RFeelerA5", "RFeelerA6"],
+      ["Tongue1", "Tongue2"],
+      ["Teeth"]
+    ],
+    "duplicated": ["Head", "LEar", "LFeelerA1", "LFeelerA2", "LFeelerA3", "LFeelerA4", "LFeelerA5", "LFeelerA6", "RFeelerA1", "RFeelerA2", "RFeelerA3", "RFeelerA4", "RFeelerA5", "RFeelerA6", "UpperBeak", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.725,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "slither",
+    "wave": "lateral",
+    "medium": "amphibious",
+    "swim": "undulate",
+    "paddles": false,
+    "sway": [
+      ["FeelerD"],
+      ["FeelerE"],
+      ["FeelerC"],
+      ["FeelerB"],
+      ["LEar"],
+      ["LFeelerA1", "LFeelerA2", "LFeelerA3", "LFeelerA4", "LFeelerA5", "LFeelerA6"],
+      ["REar"],
+      ["RFeelerA1", "RFeelerA2", "RFeelerA3", "RFeelerA4", "RFeelerA5", "RFeelerA6"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

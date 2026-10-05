@@ -1,0 +1,77 @@
+{
+  "schema": 5,
+  "dex": 147,
+  "slug": "dratini",
+  "name": "Dratini",
+  "rig": "pm0147_00_Rig",
+  "shape": "squiggle",
+  "archetype": "serpentine",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine1", "Spine2", "Spine3", "Spine4"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"]
+    ],
+    "body": ["Head", "Spine4", "Spine3", "Spine2", "Spine1", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4", "Tail5", "Tail6", "Tail7"],
+    "wings": [],
+    "appendages": [
+      ["Feeler"],
+      ["LFeeler"],
+      ["RFeeler"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_landA01",
+    "idle": "ba10_waitA01",
+    "idleAlt": null,
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": ["ba01_landB01", "ba01_landC01"]
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 1.7931,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "slither",
+    "wave": "lateral",
+    "medium": "amphibious",
+    "swim": "undulate",
+    "paddles": false,
+    "sway": [
+      ["Feeler"],
+      ["LFeeler"],
+      ["RFeeler"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

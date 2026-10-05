@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c7e65b6686908c08eceb6b48dbaf30, type: 3}
+  m_Name: BrambleAreaStrike
+  m_EditorClassIdentifier: 
+  displayName: Area Strike (Compatibility)
+  effect: 1
+  damage: 30
+  damagePerLevel: 0
+  cooldown: 6
+  castDelay: 0.65
+  range: 3.5
+  radius: 3.5
+  stunDuration: 2.5
+  projectileSpeed: 15
+  vfx: {fileID: 5162721584348768983, guid: 8118c090f1039d22183fc9794e6b6d1f, type: 3}

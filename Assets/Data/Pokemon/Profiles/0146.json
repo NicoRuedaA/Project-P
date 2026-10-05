@@ -1,0 +1,131 @@
+{
+  "schema": 5,
+  "dex": 146,
+  "slug": "moltres",
+  "name": "Moltres",
+  "rig": "pm0146_00_Rig",
+  "shape": "wings",
+  "archetype": "winged",
+  "traits": ["legs:2", "wings:2", "tail"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LThigh",
+        "lower": "LLeg",
+        "effector": "LFoot",
+        "chain": ["LThigh", "LLeg", "LFoot"],
+        "length": 0.3583,
+        "sole": 0.0593
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RThigh",
+        "lower": "RLeg",
+        "effector": "RFoot",
+        "chain": ["RThigh", "RLeg", "RFoot"],
+        "length": 0.3583,
+        "sole": 0.0593
+      }
+    ],
+    "arms": [],
+    "spine": ["Spine1", "Spine2"],
+    "neck": ["Neck1", "Neck2"],
+    "head": "Head",
+    "jaw": "Jaw",
+    "tails": [
+      ["TailA1", "TailA2", "TailA3", "TailA4", "TailA5", "TailA6", "TailA7"],
+      ["TailB1", "TailB2", "TailB3"],
+      ["TailC1", "TailC2", "TailC3"]
+    ],
+    "body": ["Head", "Neck2", "Neck1", "Spine2", "Spine1", "Waist", "Hips", "TailA1", "TailA2", "TailA3", "TailA4", "TailA5", "TailA6", "TailA7"],
+    "wings": [
+      {
+        "side": "L",
+        "source": "arm",
+        "chain": ["LShoulder", "LArm", "LForeArm", "LHand"],
+        "span": [0.8705, 0.4466, -0.2071],
+        "normal": [0.3683, -0.412, 0.8334],
+        "area": 0.3059
+      },
+      {
+        "side": "R",
+        "source": "arm",
+        "chain": ["RShoulder", "RArm", "RForeArm", "RHand"],
+        "span": [-0.8702, 0.4472, -0.2068],
+        "normal": [-0.3685, -0.4122, 0.8333],
+        "area": 0.3053
+      }
+    ],
+    "appendages": [
+      ["LToeA1", "LToeA2", "LToeA3"],
+      ["LToeB1", "LToeB2", "LToeB3"],
+      ["LToeC1", "LToeC2", "LToeC3"],
+      ["LToeD1", "LToeD2", "LToeD3"],
+      ["RToeA1", "RToeA2", "RToeA3"],
+      ["RToeB1", "RToeB2", "RToeB3"],
+      ["RToeC1", "RToeC2", "RToeC3"],
+      ["RToeD1", "RToeD2", "RToeD3"],
+      ["LFeelerE"],
+      ["LFeelerD"],
+      ["LFeelerC"],
+      ["LFinger1", "LFinger2", "LFinger3"],
+      ["LFeelerB"],
+      ["LFeelerA"],
+      ["Hair1", "Hair2", "Hair3", "Hair4", "Hair5", "Hair6", "Hair7"],
+      ["RFeelerE"],
+      ["RFeelerD"],
+      ["RFeelerC"],
+      ["RFinger1", "RFinger2", "RFinger3"],
+      ["RFeelerB"],
+      ["RFeelerA"]
+    ],
+    "duplicated": ["Head", "Hips", "Jaw", "LArm", "LFeelerA", "LFeelerB", "LFeelerC", "LFeelerD", "LFeelerE", "LFinger1", "LFinger2", "LFinger3", "LFoot", "LForeArm", "LHand", "LLeg", "LShoulder", "LThigh", "LToeA1", "LToeA2", "LToeA3", "LToeB1", "LToeB2", "LToeB3", "LToeC1", "LToeC2", "LToeC3", "LToeD1", "LToeD2", "LToeD3", "Neck1", "Neck2", "RArm", "RFeelerA", "RFeelerB", "RFeelerC", "RFeelerD", "RFeelerE", "RFinger1", "RFinger2", "RFinger3", "RFoot", "RForeArm", "RHand", "RLeg", "RShoulder", "RThigh", "RToeA1", "RToeA2", "RToeA3", "RToeB1", "RToeB2", "RToeB3", "RToeC1", "RToeC2", "RToeC3", "RToeD1", "RToeD2", "RToeD3", "Spine1", "Spine2"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "ba01_land01",
+    "idle": "ba10_waitA01",
+    "idleAlt": "ba10_waitB01",
+    "physical": ["ba20_buturi01"],
+    "special": ["ba21_tokusyu01", "ba21_tokusyu02", "ba21_tokusyu03"],
+    "hit": "ba30_damageS01",
+    "faint": "ba41_down01",
+    "fieldIdle": "fi01_wait01",
+    "walk": "fi20_walk01",
+    "run": "fi21_run01",
+    "other": ["kw01_wait01", "kw30_hate01", "kw32_happyB01", "kw50_eatA01", "kw50_eatB01", "kw50_eatC01"]
+  },
+  "missingClips": [],
+  "metrics": {
+    "height": 2.309,
+    "hipHeight": 0.8907,
+    "legLength": 0.3583,
+    "armLength": 0.4422,
+    "idleLift": 0.8725,
+    "normalized": { "hipHeight": 0.3858, "legLength": 0.1552, "armLength": 0.1915, "idleLift": 0.3779 },
+    "displayHeight": 2.55,
+    "stride": 0.9496
+  },
+  "motion": {
+    "flight": "takeoff",
+    "airborneIdle": true,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["Hair1", "Hair2", "Hair3", "Hair4", "Hair5", "Hair6", "Hair7"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

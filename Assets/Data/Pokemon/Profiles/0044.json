@@ -1,0 +1,130 @@
+{
+  "schema": 5,
+  "dex": 44,
+  "slug": "gloom",
+  "name": "Gloom",
+  "rig": "pm0044_00_Rig",
+  "shape": "humanoid",
+  "archetype": "biped",
+  "traits": ["legs:2", "arms:2"],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [
+      {
+        "side": "L",
+        "role": "leg",
+        "upper": "LHips",
+        "lower": "LThigh",
+        "effector": "LFoot",
+        "chain": ["LHips", "LThigh", "LFoot"],
+        "length": 0.4653,
+        "sole": 0.0536
+      },
+      {
+        "side": "R",
+        "role": "leg",
+        "upper": "RHips",
+        "lower": "RThigh",
+        "effector": "RFoot",
+        "chain": ["RHips", "RThigh", "RFoot"],
+        "length": 0.4653,
+        "sole": 0.0536
+      }
+    ],
+    "arms": [
+      {
+        "side": "L",
+        "role": "arm",
+        "upper": null,
+        "lower": "LArm",
+        "effector": "LHand",
+        "chain": ["LArm", "LHand"],
+        "length": null,
+        "spread": 0.5374
+      },
+      {
+        "side": "R",
+        "role": "arm",
+        "upper": null,
+        "lower": "RArm",
+        "effector": "RHand",
+        "chain": ["RArm", "RHand"],
+        "length": null,
+        "spread": 0.5374
+      }
+    ],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": "LowerBeak",
+    "tails": [],
+    "body": ["Head", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA"],
+      ["HairA1", "HairA2", "HairA3"],
+      ["HairB1", "HairB2", "HairB3"],
+      ["HairC1", "HairC2", "HairC3", "HairC4", "HairC5"],
+      ["HairD1", "HairD2", "HairD3", "HairD4", "HairD5"],
+      ["FeelerB1", "FeelerB2", "FeelerB3"],
+      ["LBeakB"],
+      ["RBeakB"],
+      ["UpperBeak"],
+      ["LBeakA"],
+      ["RBeakA"],
+      ["LToe"],
+      ["RToe"]
+    ],
+    "duplicated": ["FeelerA", "FeelerB1", "FeelerB2", "FeelerB3", "HairA1", "HairA2", "HairA3", "HairB1", "HairB2", "HairB3", "HairC1", "HairC2", "HairC3", "HairC4", "HairC5", "HairD1", "HairD2", "HairD3", "HairD4", "HairD5", "Head", "LArm", "LBeakA", "LBeakB", "LFoot", "LHand", "LHips", "LThigh", "LToe", "LowerBeak", "RArm", "RBeakA", "RBeakB", "RFoot", "RHand", "RHips", "RThigh", "RToe", "UpperBeak", "Waist"],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.8849,
+    "hipHeight": 0.5088,
+    "legLength": 0.4653,
+    "armLength": null,
+    "idleLift": -0.0019,
+    "normalized": { "hipHeight": 0.5749, "legLength": 0.5257, "armLength": null, "idleLift": -0.0022 },
+    "displayHeight": 2.55,
+    "stride": 3.3676
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "medium": "land",
+    "swim": "paddle",
+    "paddles": false,
+    "sway": [
+      ["FeelerA"],
+      ["HairA1", "HairA2", "HairA3"],
+      ["HairB1", "HairB2", "HairB3"],
+      ["HairC1", "HairC2", "HairC3", "HairC4", "HairC5"],
+      ["HairD1", "HairD2", "HairD3", "HairD4", "HairD5"],
+      ["FeelerB1", "FeelerB2", "FeelerB3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": [
+    { "code": "incomplete-chain", "message": "single-segment limbs cannot use two-bone IK: LArm>LHand, RArm>RHand" }
+  ]
+}

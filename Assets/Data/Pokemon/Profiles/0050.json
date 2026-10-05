@@ -1,0 +1,78 @@
+{
+  "schema": 5,
+  "dex": 50,
+  "slug": "diglett",
+  "name": "Diglett",
+  "rig": "pm0050_00_Rig",
+  "shape": "blob",
+  "archetype": "burrower",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine1", "Spine2", "Spine3"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [],
+    "body": ["Head", "Spine3", "Spine2", "Spine1", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["Nose"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": "waitB01",
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.4002,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "burrow",
+    "burrow": {
+      "columns": [
+        {
+          "base": "Waist",
+          "joints": ["Spine1", "Spine2", "Spine3", "Head", "Nose"]
+        }
+      ]
+    },
+    "medium": "landlocked",
+    "swim": "drift",
+    "paddles": false,
+    "sway": [
+      ["Nose"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [],
+  "warnings": []
+}

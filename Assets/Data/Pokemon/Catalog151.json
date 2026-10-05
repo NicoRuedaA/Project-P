@@ -1,0 +1,5454 @@
+{
+  "species": [
+    {
+      "dex": 1,
+      "slug": "bulbasaur",
+      "name": "Bulbasaur",
+      "rig": "pm0001_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0001_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 2,
+      "slug": "ivysaur",
+      "name": "Ivysaur",
+      "rig": "pm0002_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0002_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 3,
+      "slug": "venusaur",
+      "name": "Venusaur",
+      "rig": "pm0003_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [
+        {
+          "mesh": "pm0003_00_CombinedOnExport",
+          "texture": "pm0003_00_Eye1.png"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0003_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 4,
+      "slug": "charmander",
+      "name": "Charmander",
+      "rig": "pm0004_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0004_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA",
+          "diffuse": "pm0004_00_FireSten.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "pm0004_00_FireCore.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 0.4431372582912445,
+            "b": 0.13725490868091583
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 5,
+      "slug": "charmeleon",
+      "name": "Charmeleon",
+      "rig": "pm0005_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0005_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0005_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "FireCoreCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA",
+          "diffuse": "FireStenCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 6,
+      "slug": "charizard",
+      "name": "Charizard",
+      "rig": "pm0006_00_Rig",
+      "displayHeight": 3,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0006_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0006_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0006_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "FireCoreCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA",
+          "diffuse": "FireStenCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 7,
+      "slug": "squirtle",
+      "name": "Squirtle",
+      "rig": "pm0007_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0007_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0007_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 8,
+      "slug": "wartortle",
+      "name": "Wartortle",
+      "rig": "pm0008_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0008_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0008_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 9,
+      "slug": "blastoise",
+      "name": "Blastoise",
+      "rig": "pm0009_00_Rig",
+      "displayHeight": 2.8,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0009_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBSpc",
+          "diffuse": "pm0009_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0009_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 10,
+      "slug": "caterpie",
+      "name": "Caterpie",
+      "rig": "pm0010_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0010_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 11,
+      "slug": "metapod",
+      "name": "Metapod",
+      "rig": "pm0011_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0011_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodySpc",
+          "diffuse": "pm0011_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 12,
+      "slug": "butterfree",
+      "name": "Butterfree",
+      "rig": "pm0012_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyCKurumiru_LeafVco01",
+          "diffuse": "pm0012_01_BodyC1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0012_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBSpc00",
+          "diffuse": "pm0012_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyCKurumiru_LeafVco00",
+          "diffuse": "pm0012_00_BodyC1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 13,
+      "slug": "weedle",
+      "name": "Weedle",
+      "rig": "pm0013_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0013_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0013_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 14,
+      "slug": "kakuna",
+      "name": "Kakuna",
+      "rig": "pm0014_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc00",
+          "diffuse": "pm0014_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Bug",
+          "diffuse": "pm0014_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 15,
+      "slug": "beedrill",
+      "name": "Beedrill",
+      "rig": "pm0015_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBRediba_Wing00",
+          "diffuse": "pm0015_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyC",
+          "diffuse": "pm0015_00_BodyC1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyANutrey_Env",
+          "diffuse": "pm0015_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 16,
+      "slug": "pidgey",
+      "name": "Pidgey",
+      "rig": "pm0016_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0016_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0016_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 17,
+      "slug": "pidgeotto",
+      "name": "Pidgeotto",
+      "rig": "pm0017_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0017_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0017_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0017_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 18,
+      "slug": "pidgeot",
+      "name": "Pidgeot",
+      "rig": "pm0018_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0018_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0018_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0018_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 19,
+      "slug": "rattata",
+      "name": "Rattata",
+      "rig": "pm0019_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0019_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0019_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 20,
+      "slug": "raticate",
+      "name": "Raticate",
+      "rig": "pm0020_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0020_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0020_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 21,
+      "slug": "spearow",
+      "name": "Spearow",
+      "rig": "pm0021_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0021_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 22,
+      "slug": "fearow",
+      "name": "Fearow",
+      "rig": "pm0022_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0022_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0022_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0022_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 23,
+      "slug": "ekans",
+      "name": "Ekans",
+      "rig": "pm0023_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0023_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0023_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 24,
+      "slug": "arbok",
+      "name": "Arbok",
+      "rig": "pm0024_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0024_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBSpc",
+          "diffuse": "pm0024_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0024_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 25,
+      "slug": "pikachu",
+      "name": "Pikachu",
+      "rig": "pm0025_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0025_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0025_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 26,
+      "slug": "raichu",
+      "name": "Raichu",
+      "rig": "pm0026_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0026_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0026_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 27,
+      "slug": "sandshrew",
+      "name": "Sandshrew",
+      "rig": "pm0027_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0027_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0027_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0027_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 28,
+      "slug": "sandslash",
+      "name": "Sandslash",
+      "rig": "pm0028_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB",
+          "diffuse": "pm0028_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0028_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0028_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 29,
+      "slug": "nidoran-f",
+      "name": "Nidoran\u2640",
+      "rig": "pm0029_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0029_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0029_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 30,
+      "slug": "nidorina",
+      "name": "Nidorina",
+      "rig": "pm0030_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0030_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0030_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 31,
+      "slug": "nidoqueen",
+      "name": "Nidoqueen",
+      "rig": "pm0031_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0031_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0031_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 32,
+      "slug": "nidoran-m",
+      "name": "Nidoran\u2642",
+      "rig": "pm0032_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0032_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0032_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 33,
+      "slug": "nidorino",
+      "name": "Nidorino",
+      "rig": "pm0033_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0033_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0033_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 34,
+      "slug": "nidoking",
+      "name": "Nidoking",
+      "rig": "pm0034_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0034_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0034_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0034_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 35,
+      "slug": "clefairy",
+      "name": "Clefairy",
+      "rig": "pm0035_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0035_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0035_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 36,
+      "slug": "clefable",
+      "name": "Clefable",
+      "rig": "pm0036_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0036_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0036_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 37,
+      "slug": "vulpix",
+      "name": "Vulpix",
+      "rig": "pm0037_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB",
+          "diffuse": "pm0037_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0037_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0037_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 38,
+      "slug": "ninetales",
+      "name": "Ninetales",
+      "rig": "pm0038_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0038_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0038_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0038_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 39,
+      "slug": "jigglypuff",
+      "name": "Jigglypuff",
+      "rig": "pm0039_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Face",
+          "diffuse": "pm0039_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0039_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 40,
+      "slug": "wigglytuff",
+      "name": "Wigglytuff",
+      "rig": "pm0040_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0040_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0040_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 41,
+      "slug": "zubat",
+      "name": "Zubat",
+      "rig": "pm0041_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0041_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 42,
+      "slug": "golbat",
+      "name": "Golbat",
+      "rig": "pm0042_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0042_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0042_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 43,
+      "slug": "oddish",
+      "name": "Oddish",
+      "rig": "pm0043_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0043_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0043_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 44,
+      "slug": "gloom",
+      "name": "Gloom",
+      "rig": "pm0044_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyASpcVco_00",
+          "diffuse": "pm0044_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0044_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpcVco_01",
+          "diffuse": "pm0044_01_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 45,
+      "slug": "vileplume",
+      "name": "Vileplume",
+      "rig": "pm0045_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00_00",
+          "diffuse": "pm0045_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0045_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body00_01",
+          "diffuse": "pm0045_01_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 46,
+      "slug": "paras",
+      "name": "Paras",
+      "rig": "pm0046_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "arthropod",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye_MatCap",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0046_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 47,
+      "slug": "parasect",
+      "name": "Parasect",
+      "rig": "pm0047_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "arthropod",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB",
+          "diffuse": "pm0047_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc00",
+          "diffuse": "pm0047_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 48,
+      "slug": "venonat",
+      "name": "Venonat",
+      "rig": "pm0048_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0048_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0048_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 49,
+      "slug": "venomoth",
+      "name": "Venomoth",
+      "rig": "pm0049_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0049_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBKurumiruVco",
+          "diffuse": "pm0049_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyEyePupil_MatCap",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 50,
+      "slug": "diglett",
+      "name": "Diglett",
+      "rig": "pm0050_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "burrower",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0050_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0050_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 51,
+      "slug": "dugtrio",
+      "name": "Dugtrio",
+      "rig": "pm0051_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "burrower",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0051_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "AEye",
+          "diffuse": "pm0051_00_EyeA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0051_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 52,
+      "slug": "meowth",
+      "name": "Meowth",
+      "rig": "pm0052_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0052_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "LEye",
+          "diffuse": "pm0052_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 53,
+      "slug": "persian",
+      "name": "Persian",
+      "rig": "pm0053_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0053_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0053_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 54,
+      "slug": "psyduck",
+      "name": "Psyduck",
+      "rig": "pm0054_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0054_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0054_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 55,
+      "slug": "golduck",
+      "name": "Golduck",
+      "rig": "pm0055_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc00",
+          "diffuse": "pm0055_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0055_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 56,
+      "slug": "mankey",
+      "name": "Mankey",
+      "rig": "pm0056_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0056_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0056_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 57,
+      "slug": "primeape",
+      "name": "Primeape",
+      "rig": "pm0057_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0057_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0057_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 58,
+      "slug": "growlithe",
+      "name": "Growlithe",
+      "rig": "pm0058_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBBuffronVco",
+          "diffuse": "pm0058_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0058_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0058_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 59,
+      "slug": "arcanine",
+      "name": "Arcanine",
+      "rig": "pm0059_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBBuffron",
+          "diffuse": "pm0059_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0059_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0059_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 60,
+      "slug": "poliwag",
+      "name": "Poliwag",
+      "rig": "pm0060_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyNyorobon",
+          "diffuse": "pm0060_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0060_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 61,
+      "slug": "poliwhirl",
+      "name": "Poliwhirl",
+      "rig": "pm0061_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyNyorobon",
+          "diffuse": "pm0061_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0061_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 62,
+      "slug": "poliwrath",
+      "name": "Poliwrath",
+      "rig": "pm0062_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0062_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0062_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 63,
+      "slug": "abra",
+      "name": "Abra",
+      "rig": "pm0063_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0063_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 64,
+      "slug": "kadabra",
+      "name": "Kadabra",
+      "rig": "pm0064_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB",
+          "diffuse": "pm0064_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0064_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "MetalSpoon",
+          "diffuse": "pm0064_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0064_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 65,
+      "slug": "alakazam",
+      "name": "Alakazam",
+      "rig": "pm0065_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0065_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0065_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "MetalSpoon",
+          "diffuse": "pm0065_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 66,
+      "slug": "machop",
+      "name": "Machop",
+      "rig": "pm0066_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0066_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0066_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 67,
+      "slug": "machoke",
+      "name": "Machoke",
+      "rig": "pm0067_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0067_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0067_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 68,
+      "slug": "machamp",
+      "name": "Machamp",
+      "rig": "pm0068_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0068_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0068_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0068_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 69,
+      "slug": "bellsprout",
+      "name": "Bellsprout",
+      "rig": "pm0069_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0069_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0069_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 70,
+      "slug": "weepinbell",
+      "name": "Weepinbell",
+      "rig": "pm0070_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "hopper",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0070_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body00",
+          "diffuse": "pm0070_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 71,
+      "slug": "victreebel",
+      "name": "Victreebel",
+      "rig": "pm0071_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "hopper",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0071_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0071_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 72,
+      "slug": "tentacool",
+      "name": "Tentacool",
+      "rig": "pm0072_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0072_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0072_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 73,
+      "slug": "tentacruel",
+      "name": "Tentacruel",
+      "rig": "pm0073_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyANutrey",
+          "diffuse": "pm0073_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0073_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBTattu",
+          "diffuse": "pm0073_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 74,
+      "slug": "geodude",
+      "name": "Geodude",
+      "rig": "pm0074_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0074_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0074_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 75,
+      "slug": "graveler",
+      "name": "Graveler",
+      "rig": "pm0075_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0075_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0075_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0075_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 76,
+      "slug": "golem",
+      "name": "Golem",
+      "rig": "pm0076_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0076_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0076_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0076_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 77,
+      "slug": "ponyta",
+      "name": "Ponyta",
+      "rig": "pm0077_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0077_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0077_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA",
+          "diffuse": "pm0077_00_FireStenCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "pm0077_00_FireCoreCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 78,
+      "slug": "rapidash",
+      "name": "Rapidash",
+      "rig": "pm0078_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "FireStenA",
+          "diffuse": "pm0078_00_FireStenCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenC",
+          "diffuse": "pm0078_00_FireStenCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "pm0078_00_FireCoreCombo.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0078_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0078_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 79,
+      "slug": "slowpoke",
+      "name": "Slowpoke",
+      "rig": "pm0079_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0079_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 80,
+      "slug": "slowbro",
+      "name": "Slowbro",
+      "rig": "pm0080_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0080_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 81,
+      "slug": "magnemite",
+      "name": "Magnemite",
+      "rig": "pm0081_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyEnv00",
+          "diffuse": "pm0081_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0081_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 82,
+      "slug": "magneton",
+      "name": "Magneton",
+      "rig": "pm0082_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0082_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye00",
+          "diffuse": "pm0082_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 83,
+      "slug": "farfetchd",
+      "name": "Farfetch\u2019d",
+      "rig": "pm0083_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0083_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0083_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 84,
+      "slug": "doduo",
+      "name": "Doduo",
+      "rig": "pm0084_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0084_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "AEye",
+          "diffuse": "pm0084_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 85,
+      "slug": "dodrio",
+      "name": "Dodrio",
+      "rig": "pm0085_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA01",
+          "diffuse": "pm0085_01_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0085_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "AEye",
+          "diffuse": "pm0085_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 86,
+      "slug": "seel",
+      "name": "Seel",
+      "rig": "pm0086_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0086_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0086_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 87,
+      "slug": "dewgong",
+      "name": "Dewgong",
+      "rig": "pm0087_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0087_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0087_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 88,
+      "slug": "grimer",
+      "name": "Grimer",
+      "rig": "pm0088_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "amorphous",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Beto",
+          "diffuse": "pm0088_00_BetoMask.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc",
+          "diffuse": "pm0088_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBSpc00",
+          "diffuse": "pm0088_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye1",
+          "diffuse": "pm0088_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 89,
+      "slug": "muk",
+      "name": "Muk",
+      "rig": "pm0089_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "amorphous",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Beto",
+          "diffuse": "pm0089_00_BetoMask.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBSpc00",
+          "diffuse": "pm0089_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc",
+          "diffuse": "pm0089_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0089_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 90,
+      "slug": "shellder",
+      "name": "Shellder",
+      "rig": "pm0090_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0090_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0090_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 91,
+      "slug": "cloyster",
+      "name": "Cloyster",
+      "rig": "pm0091_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0091_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyBOmstar",
+          "diffuse": "pm0091_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0091_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 92,
+      "slug": "gastly",
+      "name": "Gastly",
+      "rig": "pm0092_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0092_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body01",
+          "diffuse": "pm0092_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 93,
+      "slug": "haunter",
+      "name": "Haunter",
+      "rig": "pm0093_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0093_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 94,
+      "slug": "gengar",
+      "name": "Gengar",
+      "rig": "pm0094_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0094_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 95,
+      "slug": "onix",
+      "name": "Onix",
+      "rig": "pm0095_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0095_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyC",
+          "diffuse": "pm0095_00_BodyC1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyAVco00",
+          "diffuse": "pm0095_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 96,
+      "slug": "drowzee",
+      "name": "Drowzee",
+      "rig": "pm0096_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0096_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0096_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 97,
+      "slug": "hypno",
+      "name": "Hypno",
+      "rig": "pm0097_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBVco",
+          "diffuse": "pm0097_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0097_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0097_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Default-Material",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 98,
+      "slug": "krabby",
+      "name": "Krabby",
+      "rig": "pm0098_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "arthropod",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0098_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0098_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 99,
+      "slug": "kingler",
+      "name": "Kingler",
+      "rig": "pm0099_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "arthropod",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBSpc",
+          "diffuse": "pm0099_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc",
+          "diffuse": "pm0099_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0099_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 100,
+      "slug": "voltorb",
+      "name": "Voltorb",
+      "rig": "pm0100_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "roller",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc",
+          "diffuse": "pm0100_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0100_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 101,
+      "slug": "electrode",
+      "name": "Electrode",
+      "rig": "pm0101_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "roller",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0101_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 102,
+      "slug": "exeggcute",
+      "name": "Exeggcute",
+      "rig": "pm0102_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "group",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc",
+          "diffuse": "pm0102_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BFace",
+          "diffuse": "pm0102_00_BFace.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "CFace",
+          "diffuse": "pm0102_00_CFace.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "AFace",
+          "diffuse": "pm0102_00_AFace.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 103,
+      "slug": "exeggutor",
+      "name": "Exeggutor",
+      "rig": "pm0103_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0103_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0103_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face_ABEyeCombined",
+          "diffuse": "pm0103_00_Face_ABEyeCombined.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FaceCEyeAndMouth",
+          "diffuse": "pm0103_00_FaceCEyeAndMouth.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 104,
+      "slug": "cubone",
+      "name": "Cubone",
+      "rig": "pm0104_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0104_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0104_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 105,
+      "slug": "marowak",
+      "name": "Marowak",
+      "rig": "pm0105_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0105_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0105_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 106,
+      "slug": "hitmonlee",
+      "name": "Hitmonlee",
+      "rig": "pm0106_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0106_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0106_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 107,
+      "slug": "hitmonchan",
+      "name": "Hitmonchan",
+      "rig": "pm0107_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0107_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0107_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 108,
+      "slug": "lickitung",
+      "name": "Lickitung",
+      "rig": "pm0108_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0108_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0108_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 109,
+      "slug": "koffing",
+      "name": "Koffing",
+      "rig": "pm0109_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0109_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0109_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 110,
+      "slug": "weezing",
+      "name": "Weezing",
+      "rig": "pm0110_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0110_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB",
+          "diffuse": "pm0110_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0110_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 111,
+      "slug": "rhyhorn",
+      "name": "Rhyhorn",
+      "rig": "pm0111_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBSpc00",
+          "diffuse": "pm0111_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc00",
+          "diffuse": "pm0111_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0111_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Default-Material",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 112,
+      "slug": "rhydon",
+      "name": "Rhydon",
+      "rig": "pm0112_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBSpc",
+          "diffuse": "pm0112_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyASpc00",
+          "diffuse": "pm0112_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0112_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 113,
+      "slug": "chansey",
+      "name": "Chansey",
+      "rig": "pm0113_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0113_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 114,
+      "slug": "tangela",
+      "name": "Tangela",
+      "rig": "pm0114_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0114_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 115,
+      "slug": "kangaskhan",
+      "name": "Kangaskhan",
+      "rig": "pm0115_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0115_51_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0115_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0115_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 116,
+      "slug": "horsea",
+      "name": "Horsea",
+      "rig": "pm0116_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0116_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 117,
+      "slug": "seadra",
+      "name": "Seadra",
+      "rig": "pm0117_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0117_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 118,
+      "slug": "goldeen",
+      "name": "Goldeen",
+      "rig": "pm0118_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0118_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0118_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyTosakinto_Fin",
+          "diffuse": "pm0118_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Default-Material",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 119,
+      "slug": "seaking",
+      "name": "Seaking",
+      "rig": "pm0119_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0119_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0119_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 120,
+      "slug": "staryu",
+      "name": "Staryu",
+      "rig": "pm0120_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0120_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 121,
+      "slug": "starmie",
+      "name": "Starmie",
+      "rig": "pm0121_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0121_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA00",
+          "diffuse": "pm0121_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 122,
+      "slug": "mr-mime",
+      "name": "Mr. Mime",
+      "rig": "pm0122_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Face",
+          "diffuse": "pm0122_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body00",
+          "diffuse": "pm0122_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 123,
+      "slug": "scyther",
+      "name": "Scyther",
+      "rig": "pm0123_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyNutrey",
+          "diffuse": "pm0123_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyRediba",
+          "diffuse": "pm0123_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0123_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Default-Material",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 124,
+      "slug": "jynx",
+      "name": "Jynx",
+      "rig": "pm0124_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0124_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0124_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 125,
+      "slug": "electabuzz",
+      "name": "Electabuzz",
+      "rig": "pm0125_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0125_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0125_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 126,
+      "slug": "magmar",
+      "name": "Magmar",
+      "rig": "pm0126_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body02",
+          "diffuse": "pm0126_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body00",
+          "diffuse": "pm0126_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body01_Add",
+          "diffuse": "pm0126_00_FireSten.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA",
+          "diffuse": "FireSten.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA",
+          "diffuse": "FireCore.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 127,
+      "slug": "pinsir",
+      "name": "Pinsir",
+      "rig": "pm0127_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc00",
+          "diffuse": "pm0127_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0127_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 128,
+      "slug": "tauros",
+      "name": "Tauros",
+      "rig": "pm0128_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0128_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0128_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 129,
+      "slug": "magikarp",
+      "name": "Magikarp",
+      "rig": "pm0129_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0129_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 130,
+      "slug": "gyarados",
+      "name": "Gyarados",
+      "rig": "pm0130_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyBTattu",
+          "diffuse": "pm0130_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyA",
+          "diffuse": "pm0130_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 131,
+      "slug": "lapras",
+      "name": "Lapras",
+      "rig": "pm0131_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0131_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 132,
+      "slug": "ditto",
+      "name": "Ditto",
+      "rig": "pm0132_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc",
+          "diffuse": "pm0132_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Face",
+          "diffuse": "pm0132_00_Face.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 133,
+      "slug": "eevee",
+      "name": "Eevee",
+      "rig": "pm0133_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Mouth_00",
+          "diffuse": "pm0133_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 134,
+      "slug": "vaporeon",
+      "name": "Vaporeon",
+      "rig": "pm0134_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0134_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 135,
+      "slug": "jolteon",
+      "name": "Jolteon",
+      "rig": "pm0135_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0135_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 136,
+      "slug": "flareon",
+      "name": "Flareon",
+      "rig": "pm0136_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "quadruped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0136_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 137,
+      "slug": "porygon",
+      "name": "Porygon",
+      "rig": "pm0137_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyNutrey",
+          "diffuse": "pm0137_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0137_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 138,
+      "slug": "omanyte",
+      "name": "Omanyte",
+      "rig": "pm0138_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0138_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0138_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 139,
+      "slug": "omastar",
+      "name": "Omastar",
+      "rig": "pm0139_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "aquatic",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0139_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body",
+          "diffuse": "pm0139_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 140,
+      "slug": "kabuto",
+      "name": "Kabuto",
+      "rig": "pm0140_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "arthropod",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyASpc",
+          "diffuse": "pm0140_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Keikouo_Neon",
+          "diffuse": "pm0140_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 141,
+      "slug": "kabutops",
+      "name": "Kabutops",
+      "rig": "pm0141_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodySpc",
+          "diffuse": "pm0141_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0141_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 142,
+      "slug": "aerodactyl",
+      "name": "Aerodactyl",
+      "rig": "pm0142_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "BodyA",
+          "diffuse": "pm0142_00_BodyA1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Eye",
+          "diffuse": "pm0142_00_Eye1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "BodyB00",
+          "diffuse": "pm0142_00_BodyB1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 143,
+      "slug": "snorlax",
+      "name": "Snorlax",
+      "rig": "pm0143_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0143_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 144,
+      "slug": "articuno",
+      "name": "Articuno",
+      "rig": "pm0144_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0144_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body01",
+          "diffuse": "pm0144_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 145,
+      "slug": "zapdos",
+      "name": "Zapdos",
+      "rig": "pm0145_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body",
+          "diffuse": "pm0145_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 146,
+      "slug": "moltres",
+      "name": "Moltres",
+      "rig": "pm0146_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "winged",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0146_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA_R",
+          "diffuse": "pm0146_00_FireStenABC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenA_L",
+          "diffuse": "pm0146_00_FireStenABC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenBC_HEAD",
+          "diffuse": "pm0146_00_FireStenABC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireStenBC_TAIL",
+          "diffuse": "pm0146_00_FireStenABC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA_L",
+          "diffuse": "pm0146_00_FireCoreA_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreA_R",
+          "diffuse": "pm0146_00_FireCoreA_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreBC_HEAD",
+          "diffuse": "pm0146_00_FireCoreBC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "FireCoreBC_TAIL",
+          "diffuse": "pm0146_00_FireCoreBC_All.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 147,
+      "slug": "dratini",
+      "name": "Dratini",
+      "rig": "pm0147_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Mouth",
+          "diffuse": "pm0147_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 148,
+      "slug": "dragonair",
+      "name": "Dragonair",
+      "rig": "pm0148_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "serpentine",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Body00",
+          "diffuse": "pm0148_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        },
+        {
+          "name": "Body01_Niantic",
+          "diffuse": "",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 149,
+      "slug": "dragonite",
+      "name": "Dragonite",
+      "rig": "pm0149_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0149_00_BodyAll1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 150,
+      "slug": "mewtwo",
+      "name": "Mewtwo",
+      "rig": "pm0150_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "biped",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0150_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "dex": 151,
+      "slug": "mew",
+      "name": "Mew",
+      "rig": "pm0151_00_Rig",
+      "displayHeight": 2.55,
+      "archetype": "floater",
+      "uvTiles": [],
+      "materials": [
+        {
+          "name": "Eye",
+          "diffuse": "pm0151_00_Body1.png",
+          "alpha": "",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "opacity": 1.0
+        }
+      ]
+    }
+  ]
+}

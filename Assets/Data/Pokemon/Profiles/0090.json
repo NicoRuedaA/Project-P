@@ -1,0 +1,74 @@
+{
+  "schema": 5,
+  "dex": 90,
+  "slug": "shellder",
+  "name": "Shellder",
+  "rig": "pm0090_00_Rig",
+  "shape": "ball",
+  "archetype": "aquatic",
+  "traits": [],
+  "skeleton": {
+    "root": "Origin",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": [],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [],
+    "body": ["Head", "Waist"],
+    "wings": [],
+    "appendages": [
+      ["FeelerB"],
+      ["FeelerA1", "FeelerA2", "FeelerA3"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": "land01",
+    "idle": "waitA01",
+    "idleAlt": null,
+    "physical": ["buturi01"],
+    "special": ["tokusyu01"],
+    "hit": "damageS01",
+    "faint": "down01",
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["walk", "run"],
+  "metrics": {
+    "height": 0.5134,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "medium": "water",
+    "swim": "pulse",
+    "paddles": true,
+    "sway": [
+      ["FeelerB"],
+      ["FeelerA1", "FeelerA2", "FeelerA3"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Shellder as a ball, and its rig has no limbs, wings or tail, but it is a bivalve that lives in the sea: a shell (Head over Waist) with a tongue. It never leaves the water and swims by jets, the way the rules have a limbless aquatic body with free appendages pulse (its whole shell squeezes on each jet)." }
+  ],
+  "warnings": []
+}

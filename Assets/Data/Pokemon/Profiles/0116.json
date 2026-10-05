@@ -1,0 +1,97 @@
+{
+  "schema": 5,
+  "dex": 116,
+  "slug": "horsea",
+  "name": "Horsea",
+  "rig": "pm0116_00_Rig",
+  "shape": "blob",
+  "archetype": "aquatic",
+  "traits": ["tail"],
+  "skeleton": {
+    "root": "Waist",
+    "waist": "Waist",
+    "legs": [],
+    "arms": [],
+    "spine": ["Spine"],
+    "neck": [],
+    "head": "Head",
+    "jaw": null,
+    "tails": [
+      ["Tail1", "Tail2", "Tail3", "Tail4"]
+    ],
+    "body": ["Head", "Spine", "Waist", "Hips", "Tail1", "Tail2", "Tail3", "Tail4"],
+    "wings": [],
+    "appendages": [
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB"],
+      ["LFeeler"],
+      ["LHairA1", "LHairA2"],
+      ["LHairB1", "LHairB2"],
+      ["LHairC1", "LHairC2"],
+      ["RFeeler"],
+      ["RHairA1", "RHairA2"],
+      ["RHairB1", "RHairB2"],
+      ["RHairC1", "RHairC2"],
+      ["trNose1", "Nose2"]
+    ],
+    "duplicated": [],
+    "ambiguous": []
+  },
+  "clips": {
+    "entry": null,
+    "idle": null,
+    "idleAlt": null,
+    "physical": [],
+    "special": [],
+    "hit": null,
+    "faint": null,
+    "fieldIdle": null,
+    "walk": null,
+    "run": null,
+    "other": []
+  },
+  "missingClips": ["idle", "physical", "special", "hit", "faint", "walk", "run"],
+  "metrics": {
+    "height": 0.3948,
+    "hipHeight": null,
+    "legLength": null,
+    "armLength": null,
+    "idleLift": null,
+    "normalized": { "hipHeight": null, "legLength": null, "armLength": null, "idleLift": null },
+    "displayHeight": 2.55,
+    "stride": null
+  },
+  "motion": {
+    "flight": "none",
+    "airborneIdle": false,
+    "restTails": [],
+    "armSwing": 1,
+    "vines": [],
+    "sitUp": false,
+    "crawl": "hop",
+    "wave": "lateral",
+    "medium": "water",
+    "swim": "undulate",
+    "paddles": true,
+    "sway": [
+      ["FeelerA1", "FeelerA2"],
+      ["FeelerB"],
+      ["LFeeler"],
+      ["LHairA1", "LHairA2"],
+      ["LHairB1", "LHairB2"],
+      ["LHairC1", "LHairC2"],
+      ["RFeeler"],
+      ["RHairA1", "RHairA2"],
+      ["RHairB1", "RHairB2"],
+      ["RHairC1", "RHairC2"],
+      ["trNose1", "Nose2"]
+    ]
+  },
+  "uvTiles": [],
+  "overrides": [
+    { "field": "archetype", "reason": "PokéAPI files Horsea as a blob, but it is a seahorse that lives in the sea: an upright body (Head, Spine, Waist) over a curled tail (Tail1-Tail4), with fins and no limbs. The rig has no clips, so nothing shows it hovering or standing; as an aquatic body it never leaves the water and beats its tail, its fins sculling with the beat." }
+  ],
+  "warnings": [
+    { "code": "missing-idle", "message": "no idle clip (waitA01)" }
+  ]
+}
