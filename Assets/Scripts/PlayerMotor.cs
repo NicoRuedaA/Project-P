@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace Wildbound {
+namespace Pokemon3D {
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMotor:MonoBehaviour {
  public float health=100, stamina=100;public bool invulnerable;

@@ -4,7 +4,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public sealed class ToonStyleWindow : EditorWindow
     {

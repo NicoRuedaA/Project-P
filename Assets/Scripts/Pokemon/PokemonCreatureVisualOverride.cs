@@ -1,7 +1,7 @@
 using UnityEngine;
-using Wildbound.Locomotion;
+using Pokemon3D.Locomotion;
 
-namespace Wildbound.Pokemon
+namespace Pokemon3D.Pokemon
 {
     // Scene-only visual substitution: gameplay species and combat data are unchanged.
     public sealed class PokemonCreatureVisualOverride : MonoBehaviour

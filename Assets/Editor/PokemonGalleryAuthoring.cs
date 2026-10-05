@@ -7,9 +7,9 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
-using Wildbound.Pokemon;
+using Pokemon3D.Pokemon;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Fixed local assets and Valley scene only; no caller paths, code, network, or gameplay wiring.
     public static class PokemonGalleryAuthoring
@@ -219,7 +219,7 @@ namespace Wildbound.Editor
                 var entry = entries[i]; var s = catalog.species[i];
                 if (entry.dex != i + 1 || !entry.visual || !entry.sourceModel || !entry.sourceProfile) throw new InvalidOperationException("Missing gallery metadata/model/profile for dex " + (i + 1));
                 report.gameplayCreatures += entry.GetComponentsInChildren<Creature>(true).Length;
-                report.proceduralAnimators += entry.GetComponentsInChildren<Wildbound.Locomotion.ProceduralBodyAnimator>(true).Length;
+                report.proceduralAnimators += entry.GetComponentsInChildren<Pokemon3D.Locomotion.ProceduralBodyAnimator>(true).Length;
                 foreach (var t in entry.GetComponentsInChildren<Transform>(true)) report.missingScripts += GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(t.gameObject);
                 var bounds = BoundsOf(entry.visual.gameObject);
                 if (Mathf.Abs(bounds.size.y - entry.displayHeight) > .01f) throw new InvalidOperationException("Display height normalization failed for dex " + entry.dex);

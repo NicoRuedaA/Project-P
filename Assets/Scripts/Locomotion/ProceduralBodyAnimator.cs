@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Wildbound.Locomotion
+namespace Pokemon3D.Locomotion
 {
     // Presentation only. CharacterController and Creature retain root/movement/combat authority.
     [DefaultExecutionOrder(100)]

@@ -1,7 +1,7 @@
 using UnityEngine;
 using BotwVfx;
 
-namespace Wildbound.Combat
+namespace Pokemon3D.Combat
 {
     public enum AttackEffect { Projectile, Area, Stun, Heal }
 

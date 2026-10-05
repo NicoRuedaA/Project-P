@@ -4,10 +4,10 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-using Wildbound.Locomotion;
-using Wildbound.Pokemon;
+using Pokemon3D.Locomotion;
+using Pokemon3D.Pokemon;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     [CustomEditor(typeof(ProceduralBodyAnimator))]
     public sealed class BodyMovementInspector : UnityEditor.Editor

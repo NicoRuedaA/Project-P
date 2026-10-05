@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class ToonStyleAuthoring
     {

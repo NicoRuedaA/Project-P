@@ -7,9 +7,9 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Wildbound.Pokemon;
+using Pokemon3D.Pokemon;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Fixed local male trainer assets only. No caller paths, scripts, network or Play control.
     public static class TrainerModelAuthoring
@@ -180,7 +180,7 @@ namespace Wildbound.Editor
                 var game = s.GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<Game>(true)).Single(); var camera = game.cam;
                 if (!game.InitializeWorld() || !game.InitializeWorld() || game.player != p || game.cam != camera || Visual(p) != visual || p.transform.position != pos || p.transform.rotation != rot || cc.height != height || cc.radius != radius)
                     throw new InvalidOperationException("Saved authored startup changed trainer/controller references or root.");
-                var animator = p.GetComponent<Wildbound.Locomotion.ProceduralBodyAnimator>();
+                var animator = p.GetComponent<Pokemon3D.Locomotion.ProceduralBodyAnimator>();
                 var marker = p.GetComponent<TrainerVisualOverride>();
                 if (!animator || marker.proceduralAnimator != animator || animator.Rig == null || animator.Rig.model != visual || animator.Rig.legs.Length != 2 || animator.Rig.arms.Length != 2)
                     throw new InvalidOperationException("Saved authored startup lost the full-body trainer binding.");

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Wildbound.Combat
+namespace Pokemon3D.Combat
 {
     [CreateAssetMenu(menuName = "Wildbound/Combat/Catalog", fileName = "CompanionCombatCatalog")]
     public sealed class CompanionCombatCatalog : ScriptableObject

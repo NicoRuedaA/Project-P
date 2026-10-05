@@ -4,9 +4,9 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Wildbound.Locomotion;
+using Pokemon3D.Locomotion;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class EditableSceneAuthoring
     {

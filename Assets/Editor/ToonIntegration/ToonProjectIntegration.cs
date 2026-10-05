@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class ToonProjectIntegration
     {

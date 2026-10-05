@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Wildbound.Pokemon
+namespace Pokemon3D.Pokemon
 {
     // Visual-only replacement; movement and the existing controller remain authoritative.
     [DisallowMultipleComponent]

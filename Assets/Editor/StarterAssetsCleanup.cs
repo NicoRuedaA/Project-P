@@ -9,7 +9,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Temporary fixed-scope cleanup harness. Reports and byte backups are outside Assets.
     public static class StarterAssetsCleanup
@@ -43,7 +43,7 @@ namespace Wildbound.Editor
                         var property = so.GetIterator();
                         while (property.Next(true)) if (property.propertyType == SerializedPropertyType.ObjectReference) {
                             var value = property.objectReferenceValue;
-                            if (!value && property.objectReferenceInstanceIDValue != 0) missing++;
+                            if (!value && property.objectReferenceEntityIdValue.IsValid()) missing++;
                             string identity = ID(value);
                             if (identity == "" && value is GameObject go) identity = Hierarchy(go.transform, obj.transform);
                             if (identity == "" && value is Component c) identity = Hierarchy(c.transform, obj.transform) + ":" + c.GetType().FullName;

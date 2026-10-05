@@ -1,6 +1,6 @@
 using UnityEngine;
-using Wildbound.Combat;
-namespace Wildbound {
+using Pokemon3D.Combat;
+namespace Pokemon3D {
 public class Projectile:MonoBehaviour {
  public Creature source;public bool capture;Vector3 velocity;float expiry;float damage;float range;Vector3 origin;bool sourceWasAlly;
  public void Init(Vector3 v,Creature owner,bool ball,CompanionAttack attack=null){velocity=v;source=owner;capture=ball;expiry=Time.time+(ball?4:attack?attack.range/Mathf.Max(.1f,v.magnitude):4);damage=attack?attack.damage+(owner&&owner.record!=null?owner.record.level*attack.damagePerLevel:0):18+(owner&&owner.record!=null?owner.record.level*2:0);range=attack?attack.range:60;origin=transform.position;sourceWasAlly=owner&&owner.ally;}

@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Wildbound.Locomotion
+namespace Pokemon3D.Locomotion
 {
     // Port of arena-3d/src/gait.js, locomotion.js and multileg.js. All angles are radians.
     public static class LocomotionMath

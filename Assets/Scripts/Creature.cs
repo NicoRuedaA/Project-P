@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Wildbound.Combat;
+using Pokemon3D.Combat;
 
-namespace Wildbound
+namespace Pokemon3D
 {
     [RequireComponent(typeof(CharacterController))]
     public class Creature : MonoBehaviour

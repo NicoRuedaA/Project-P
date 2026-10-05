@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Wildbound
+namespace Pokemon3D
 {
     /// <summary>Shared Unity Toon Shader settings for authored and procedural visuals.</summary>
     public static class ToonMaterials

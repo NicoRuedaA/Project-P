@@ -7,10 +7,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-using Wildbound.Locomotion;
-using Wildbound.Pokemon;
+using Pokemon3D.Locomotion;
+using Pokemon3D.Pokemon;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class BodyMovementInspectorValidation
     {
@@ -18,7 +18,7 @@ namespace Wildbound.Editor
             new[] { EditorJsonUtility.ToJson(t.gameObject) }.Concat(t.GetComponents<Component>().Select(c => c ? EditorJsonUtility.ToJson(c) : "missing"))));
         static Func<bool> Geometry(Transform model) {
             var poses = model.GetComponentsInChildren<Transform>(true).Select(t => new { t, position = t.localPosition, rotation = t.localRotation, scale = t.localScale }).ToArray();
-            string Skin() => string.Join(";", model.GetComponentsInChildren<SkinnedMeshRenderer>(true).Select(s => s.sharedMesh.GetInstanceID() + ":" + string.Join(",", s.bones.Select(b => b ? b.GetInstanceID() : 0))));
+            string Skin() => string.Join(";", model.GetComponentsInChildren<SkinnedMeshRenderer>(true).Select(s => s.sharedMesh.GetEntityId() + ":" + string.Join(",", s.bones.Select(b => b ? b.GetEntityId() : EntityId.None))));
             var skin = Skin();
             return () => model.GetComponentsInChildren<Transform>(true).Length == poses.Length && Skin() == skin && poses.All(p => p.t &&
                 Vector3.Distance(p.position, p.t.localPosition) <= .000001f && Vector3.Distance(p.scale, p.t.localScale) <= .000001f && Quaternion.Angle(p.rotation, p.t.localRotation) <= .01f);

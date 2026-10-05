@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-namespace Wildbound {
+namespace Pokemon3D {
 public static class World {
  public static readonly Vector3 Camp=new Vector3(0,0,-28);
  static Dictionary<Color,Material> materials=new Dictionary<Color,Material>();

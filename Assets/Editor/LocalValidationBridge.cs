@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Same-user local automation only: fixed files and explicitly allowlisted operations.
     // No network, credentials, caller-supplied paths/code, or play-mode control.

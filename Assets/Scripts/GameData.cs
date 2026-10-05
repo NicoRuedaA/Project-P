@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-namespace Wildbound {
+namespace Pokemon3D {
 [Serializable] public class CreatureRecord {
  public string id; public int species; public string combatLoadoutId; public int level=1; public int xp; public float health=100;
  public CreatureRecord(int type){id=Guid.NewGuid().ToString("N");species=type;}

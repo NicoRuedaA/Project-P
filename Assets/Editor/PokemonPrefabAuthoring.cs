@@ -6,10 +6,10 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Wildbound.Locomotion;
-using Wildbound.Pokemon;
+using Pokemon3D.Locomotion;
+using Pokemon3D.Pokemon;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class PokemonPrefabAuthoring
     {

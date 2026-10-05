@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Wildbound
+namespace Pokemon3D
 {
     public sealed class ToonStyle : ScriptableObject
     {

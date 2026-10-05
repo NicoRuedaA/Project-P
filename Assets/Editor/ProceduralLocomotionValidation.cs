@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using Wildbound.Locomotion;
+using Pokemon3D.Locomotion;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Explicit menu/CLI entry point: no tests run automatically on reload or play.
     public static class ProceduralLocomotionValidation

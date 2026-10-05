@@ -5,20 +5,20 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Wildbound.Locomotion;
+using Pokemon3D.Locomotion;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Fixed read-only scene inspection: no binding, ticking, authoring or Play-mode changes.
     public static class EditorCreatureMotionDiagnostics
     {
         static string PathOf(Transform t) => t ? (t.parent ? PathOf(t.parent) + "/" : "") + t.name : "<null>";
         static bool Inside(Transform t, Transform model) => t && model && (t == model || t.IsChildOf(model));
-        static Dictionary<int, string> Snapshot(Scene scene) {
-            var entries = new Dictionary<int, string>();
+        static Dictionary<EntityId, string> Snapshot(Scene scene) {
+            var entries = new Dictionary<EntityId, string>();
             foreach (var root in scene.GetRootGameObjects()) foreach (var t in root.GetComponentsInChildren<Transform>(true)) {
-                entries[t.gameObject.GetInstanceID()] = t.gameObject.name + "|" + t.gameObject.activeSelf + "|" + t.gameObject.layer;
-                foreach (var c in t.GetComponents<Component>()) if (c) entries[c.GetInstanceID()] = EditorJsonUtility.ToJson(c);
+                entries[t.gameObject.GetEntityId()] = t.gameObject.name + "|" + t.gameObject.activeSelf + "|" + t.gameObject.layer;
+                foreach (var c in t.GetComponents<Component>()) if (c) entries[c.GetEntityId()] = EditorJsonUtility.ToJson(c);
             }
             return entries;
         }

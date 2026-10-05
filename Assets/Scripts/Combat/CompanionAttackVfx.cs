@@ -1,7 +1,7 @@
 using UnityEngine;
 using BotwVfx;
 
-namespace Wildbound.Combat
+namespace Pokemon3D.Combat
 {
     // Owns presentation only: gameplay impact remains controlled by Creature's cast delay and projectile collision.
     public sealed class CompanionAttackVfx : MonoBehaviour

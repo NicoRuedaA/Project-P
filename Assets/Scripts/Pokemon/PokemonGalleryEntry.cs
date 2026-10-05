@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Wildbound.Pokemon
+namespace Pokemon3D.Pokemon
 {
     public sealed class PokemonGalleryEntry : MonoBehaviour
     {

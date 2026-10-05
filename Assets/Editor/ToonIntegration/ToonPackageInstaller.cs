@@ -3,7 +3,7 @@ using UnityEditor.PackageManager;
 using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class ToonPackageInstaller
     {

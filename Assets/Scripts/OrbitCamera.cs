@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace Wildbound {
+namespace Pokemon3D {
 public class OrbitCamera:MonoBehaviour {
  public Creature target;[SerializeField] float yaw=30,pitch=24;[SerializeField] float followDistance=6.5f;public bool aiming;public Camera cameraComponent;
  public void BindRuntime(Transform player){cameraComponent=GetComponent<Camera>();yaw=transform.eulerAngles.y;pitch=Mathf.Clamp(Mathf.DeltaAngle(0,transform.eulerAngles.x),8,65);followDistance=Mathf.Max(.1f,Vector3.Distance(transform.position,player.position+Vector3.up*1.7f));}

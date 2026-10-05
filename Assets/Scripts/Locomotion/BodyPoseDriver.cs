@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Wildbound.Locomotion
+namespace Pokemon3D.Locomotion
 {
     public enum BodyPoseMode { Idle, Walk, Run, Swim, Climb, Jump, Fall, Land, Flight, Glide, Dodge }
 

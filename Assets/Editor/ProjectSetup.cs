@@ -2,7 +2,7 @@ using System.IO;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Scene generation is deliberate, never an import/domain-reload side effect.
     public static class ProjectSetup

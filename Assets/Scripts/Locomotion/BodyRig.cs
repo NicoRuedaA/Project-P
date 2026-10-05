@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Wildbound.Locomotion
+namespace Pokemon3D.Locomotion
 {
     public enum BodyArchetype { Biped, Quadruped, Winged, Serpentine, Aquatic, Floater, Roller, Group, Hopper, Burrower, Amorphous, Arthropod }
     public enum CrawlStyle { None, Slither, Hop, Roll }

@@ -8,9 +8,9 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Wildbound.Locomotion;
+using Pokemon3D.Locomotion;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class FullBodyAuthoring
     {
@@ -24,18 +24,18 @@ namespace Wildbound.Editor
             if (!scene.IsValid() || !scene.isLoaded || scene != SceneManager.GetActiveScene()) throw new InvalidOperationException("The fixed Valley must be open and active; no scene will be reopened.");
             return scene;
         }
-        public static Dictionary<int, string> Snapshot(Scene scene) {
-            var result = new Dictionary<int, string>();
+        public static Dictionary<EntityId, string> Snapshot(Scene scene) {
+            var result = new Dictionary<EntityId, string>();
             using (var hash = SHA256.Create()) foreach (var root in scene.GetRootGameObjects()) foreach (var t in root.GetComponentsInChildren<Transform>(true)) {
-                result[t.gameObject.GetInstanceID()] = t.gameObject.name + "|" + t.gameObject.activeSelf + "|" + t.gameObject.layer + "|" + t.gameObject.tag;
+                result[t.gameObject.GetEntityId()] = t.gameObject.name + "|" + t.gameObject.activeSelf + "|" + t.gameObject.layer + "|" + t.gameObject.tag;
                 foreach (var c in t.GetComponents<Component>()) {
                     if (!c) throw new InvalidOperationException("A current object has a missing component; snapshot refused.");
-                    result[c.GetInstanceID()] = BitConverter.ToString(hash.ComputeHash(Encoding.UTF8.GetBytes(EditorJsonUtility.ToJson(c))));
+                    result[c.GetEntityId()] = BitConverter.ToString(hash.ComputeHash(Encoding.UTF8.GetBytes(EditorJsonUtility.ToJson(c))));
                 }
             }
             return result;
         }
-        public static void AssertSnapshot(Dictionary<int, string> before, Dictionary<int, string> after) {
+        public static void AssertSnapshot(Dictionary<EntityId, string> before, Dictionary<EntityId, string> after) {
             if (before.Count != after.Count || before.Any(pair => !after.TryGetValue(pair.Key, out var value) || value != pair.Value))
                 throw new InvalidOperationException("A current scene object/component/transform changed unexpectedly.");
         }
@@ -81,7 +81,7 @@ namespace Wildbound.Editor
             if (!File.Exists(Path.Combine(Evidence, "fullbody-user-baseline.unity"))) throw new InvalidOperationException("Consented user baseline backup is missing.");
             var creatures = scene.GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<Creature>(true)).ToArray();
             var player = scene.GetRootGameObjects().SelectMany(r => r.GetComponentsInChildren<PlayerMotor>(true)).Single();
-            var trainerMarker = player.GetComponent<Wildbound.Pokemon.TrainerVisualOverride>();
+            var trainerMarker = player.GetComponent<Pokemon3D.Pokemon.TrainerVisualOverride>();
             if (creatures.Length != 9 || !trainerMarker || !trainerMarker.replacementVisual) throw new InvalidOperationException("Expected nine imported actors and the imported trainer.");
             // Validate both imported topologies before changing any live component.
             var creatureRigs = creatures.Select(c => PokemonPrefabAuthoring.BindMachop(c.model)).ToArray();
@@ -89,12 +89,12 @@ namespace Wildbound.Editor
             var existingAnimator = player.GetComponent<ProceduralBodyAnimator>();
             if (existingAnimator && existingAnimator != trainerMarker.proceduralAnimator) throw new InvalidOperationException("An unrelated player animator exists; not overwritten.");
             var actorPositions = creatures.Select(c => c.transform.position).ToArray();
-            var excluded = new HashSet<int>(creatures.Select(c => c.GetComponent<ProceduralBodyAnimator>().GetInstanceID())) { trainerMarker.GetInstanceID() };
+            var excluded = new HashSet<EntityId>(creatures.Select(c => c.GetComponent<ProceduralBodyAnimator>().GetEntityId())) { trainerMarker.GetEntityId() };
             var before = Snapshot(scene).Where(p => !excluded.Contains(p.Key)).ToDictionary(p => p.Key, p => p.Value);
             for (int i = 0; i < creatures.Length; i++) creatures[i].GetComponent<ProceduralBodyAnimator>().Bind(creatureRigs[i], creatures[i]);
             var animator = player.GetComponent<ProceduralBodyAnimator>(); if (!animator) animator = player.gameObject.AddComponent<ProceduralBodyAnimator>();
             else if (animator != trainerMarker.proceduralAnimator) throw new InvalidOperationException("An unrelated player animator exists; not overwritten.");
-            trainerMarker.proceduralAnimator = animator; animator.Bind(trainerRig); excluded.Add(animator.GetInstanceID());
+            trainerMarker.proceduralAnimator = animator; animator.Bind(trainerRig); excluded.Add(animator.GetEntityId());
             AssertSnapshot(before, Snapshot(scene).Where(p => !excluded.Contains(p.Key)).ToDictionary(p => p.Key, p => p.Value));
             for (int i = 0; i < creatures.Length; i++) if (creatures[i].transform.position != actorPositions[i]) throw new InvalidOperationException("Actor root changed.");
             EditorSceneManager.MarkSceneDirty(scene); if (!EditorSceneManager.SaveScene(scene)) throw new InvalidOperationException("Full-body scene save failed.");

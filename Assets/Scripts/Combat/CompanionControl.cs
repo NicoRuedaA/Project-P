@@ -6,7 +6,7 @@ using StarterAssets;
 using UnityEngine.InputSystem;
 #endif
 
-namespace Wildbound.Combat
+namespace Pokemon3D.Combat
 {
     [DefaultExecutionOrder(-80)]
     public sealed class CompanionControl : MonoBehaviour

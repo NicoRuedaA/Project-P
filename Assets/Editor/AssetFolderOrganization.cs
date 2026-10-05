@@ -7,7 +7,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     // Explicit one-time folder consolidation; no scene or asset regeneration.
     public static class AssetFolderOrganization
@@ -48,7 +48,7 @@ namespace Wildbound.Editor
                     {
                         var property = serialized.GetIterator();
                         while (property.Next(true))
-                            if (property.propertyType == SerializedPropertyType.ObjectReference && !property.objectReferenceValue && property.objectReferenceInstanceIDValue != 0) count++;
+                            if (property.propertyType == SerializedPropertyType.ObjectReference && !property.objectReferenceValue && property.objectReferenceEntityIdValue.IsValid()) count++;
                     }
                 }
             }

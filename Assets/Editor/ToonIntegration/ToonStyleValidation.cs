@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class ToonStyleValidation
     {

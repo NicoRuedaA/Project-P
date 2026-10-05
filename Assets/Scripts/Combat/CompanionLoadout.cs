@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Wildbound.Combat
+namespace Pokemon3D.Combat
 {
     [CreateAssetMenu(menuName = "Wildbound/Combat/Companion Loadout", fileName = "CompanionLoadout")]
     public sealed class CompanionLoadout : ScriptableObject

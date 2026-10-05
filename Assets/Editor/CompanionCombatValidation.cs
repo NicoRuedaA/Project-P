@@ -10,9 +10,9 @@ using Unity.Cinemachine;
 using StarterAssets;
 using BotwVfx;
 using UnityEngine.UIElements;
-using Wildbound.Combat;
+using Pokemon3D.Combat;
 
-namespace Wildbound.Editor
+namespace Pokemon3D.Editor
 {
     public static class CompanionCombatValidation
     {
@@ -58,7 +58,7 @@ namespace Wildbound.Editor
         {
             if (EditorApplication.isPlayingOrWillChangePlaymode || EditorApplication.isCompiling || EditorApplication.isUpdating) throw new InvalidOperationException("Third-person camera validation requires idle Edit mode.");
             checks = 0; var originalGame = Game.Instance;
-            var snapshots = new Dictionary<Scene, Dictionary<int, string>>(); var dirty = new Dictionary<Scene, bool>();
+            var snapshots = new Dictionary<Scene, Dictionary<EntityId, string>>(); var dirty = new Dictionary<Scene, bool>();
             for (int i = 0; i < SceneManager.sceneCount; i++) { var scene = SceneManager.GetSceneAt(i); if (!scene.isLoaded || EditorSceneManager.IsPreviewScene(scene)) continue; snapshots.Add(scene, FullBodyAuthoring.Snapshot(scene)); dirty.Add(scene, scene.isDirty); }
             var preview = EditorSceneManager.NewPreviewScene();
             try
@@ -136,7 +136,7 @@ namespace Wildbound.Editor
                 throw new InvalidOperationException("Authored Ally validation requires idle Edit mode.");
             checks = 0;
             var originalGame = Game.Instance;
-            var snapshots = new Dictionary<Scene, Dictionary<int, string>>();
+            var snapshots = new Dictionary<Scene, Dictionary<EntityId, string>>();
             var dirty = new Dictionary<Scene, bool>();
             for (int i = 0; i < SceneManager.sceneCount; i++)
             {
@@ -178,8 +178,8 @@ namespace Wildbound.Editor
                 var animator = actor.GetComponent<Locomotion.ProceduralBodyAnimator>();
                 var rig = JsonUtility.ToJson(animator);
                 var geometry = clone.GetComponentsInChildren<Transform>(true);
-                var rests = new Dictionary<int, string>();
-                foreach (var t in geometry) rests[t.GetInstanceID()] = EditorJsonUtility.ToJson(t);
+                var rests = new Dictionary<EntityId, string>();
+                foreach (var t in geometry) rests[t.GetEntityId()] = EditorJsonUtility.ToJson(t);
                 var loadout = actor.loadout; var record = actor.record; var cooldowns = game.Cooldowns(actor);
                 var serialized = new SerializedObject(actor);
                 inspector = UnityEditor.Editor.CreateEditor(actor);
@@ -200,7 +200,7 @@ namespace Wildbound.Editor
                 Require(actor && actor.ally && !game.companion && !game.IsPossessing && trainerController.enabled, "E again must retain the actor as an Ally and restore the trainer.");
                 Require(virtualCamera.Follow == trainerPivot && virtualCamera.LookAt == trainerPivot, "E withdrawal must restore exact camera references.");
                 Require(actor.forcedTarget == null && clone.GetComponentsInChildren<Transform>(true).Length == geometry.Length, "Withdrawal must clear commanded target and remove its camera pivot.");
-                foreach (var t in geometry) Require(EditorJsonUtility.ToJson(t) == rests[t.GetInstanceID()], "Possession changed authored transform " + t.name);
+                foreach (var t in geometry) Require(EditorJsonUtility.ToJson(t) == rests[t.GetEntityId()], "Possession changed authored transform " + t.name);
                 for (int i = 0; i < 3; i++) { game.ToggleCompanion(); game.ToggleCompanion(); }
                 Require(actor && clone.GetComponentsInChildren<Transform>(true).Length == geometry.Length && ReferenceEquals(cooldowns, game.Cooldowns(actor)), "Repeated E must not leak pivots or reset cooldowns.");
                 game.companion = actor; game.Dismiss();
@@ -274,7 +274,7 @@ namespace Wildbound.Editor
             checks = 0;
             var originalGame = Game.Instance;
             float originalTimeScale = Time.timeScale;
-            var snapshots = new Dictionary<Scene, Dictionary<int, string>>();
+            var snapshots = new Dictionary<Scene, Dictionary<EntityId, string>>();
             var dirty = new Dictionary<Scene, bool>();
             for (int i = 0; i < SceneManager.sceneCount; i++)
             {
